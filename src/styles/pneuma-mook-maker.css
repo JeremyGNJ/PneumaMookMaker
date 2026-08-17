@@ -246,8 +246,41 @@
   color: #ff3030;
 }
 
-input[name="pneuma-mook-maker.settingsPlaceholder"] {
-  display: none;
+.pneuma-mook-maker-skill-config-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  height: 100%;
+}
+
+.pneuma-mook-maker-skill-config-form > p {
+  margin: 0;
+}
+
+.pneuma-mook-maker-skill-list {
+  border: 1px solid var(--color-border-light-primary);
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.pneuma-mook-maker-skill-list table {
+  margin: 0;
+}
+
+.pneuma-mook-maker-skill-list thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.pneuma-mook-maker-skill-list td:last-child,
+.pneuma-mook-maker-skill-list th:last-child {
+  width: 155px;
+}
+
+.pneuma-mook-maker-skill-config-form .sheet-footer {
+  gap: 0.5rem;
 }
 
 @media (max-width: 480px) {

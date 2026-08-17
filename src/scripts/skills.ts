@@ -6,6 +6,37 @@ import {
 
 export type SkillTargets = Partial<Record<SkillCategory, number>>;
 
+export function getCurrentCombatNumber(actor: Actor): number | null {
+  const classifications = getSkillClassifications();
+  const counts = new Map<number, number>();
+
+  for (const item of actor.items) {
+    if (
+      String(item.type) !== "skill" ||
+      !item.name ||
+      classifications[normalizeSkillKey(item.name)] !== 1
+    ) continue;
+    const stat = String(foundry.utils.getProperty(item, "system.stat") ?? "");
+    const statValue = Number(
+      foundry.utils.getProperty(actor, `system.stats.${stat}.value`),
+    );
+    const skillLevel = Number(foundry.utils.getProperty(item, "system.level"));
+    const base = statValue + skillLevel;
+    if (!Number.isInteger(base) || base < 8 || base > 20) continue;
+    counts.set(base, (counts.get(base) ?? 0) + 1);
+  }
+
+  const ranked = Array.from(counts.entries()).sort(
+    ([leftBase, leftCount], [rightBase, rightCount]) =>
+      rightCount - leftCount || leftBase - rightBase,
+  );
+  const first = ranked[0];
+  if (!first) return null;
+  const second = ranked[1];
+  if (second && first[1] === second[1]) return null;
+  return first[0];
+}
+
 export function getSkillUpdates(
   actor: Actor,
   targets: SkillTargets,

@@ -1,6 +1,11 @@
 import { getArmorUpdates, getCurrentArmorSelections } from "./armor.js";
 import { applyMookChanges } from "./apply-mook.js";
-import { getAdjustedSkillTarget, getSkillUpdates, type SkillTargets } from "./skills.js";
+import {
+  getAdjustedSkillTarget,
+  getCurrentCombatNumber,
+  getSkillUpdates,
+  type SkillTargets,
+} from "./skills.js";
 import { getStatsForHitPoints } from "./stats.js";
 import { confirmPurgeGear } from "./purge.js";
 import { confirmPromotion } from "./promotion.js";
@@ -60,18 +65,33 @@ function getSkillAdjustmentOptions(name: string): string {
 
 function getMookMakerForm(token: Token, availableRoles: AvailableRole[]): string {
   const name = escapeHtml(token.document.name ?? token.actor?.name ?? "");
+  const actor = token.actor ?? {};
+  const actorDocument = token.actor;
+  const currentCombatNumber = actorDocument
+    ? getCurrentCombatNumber(actorDocument)
+    : null;
+  const currentCombatSelection = currentCombatNumber === 8
+    ? "Civilian"
+    : currentCombatNumber !== null && currentCombatNumber >= 10 && currentCombatNumber <= 14
+      ? String(currentCombatNumber)
+      : currentCombatNumber !== null
+        ? "custom"
+        : "No change";
+  const customCombatValue = currentCombatSelection === "custom"
+    ? String(currentCombatNumber)
+    : "";
   const customCombatChoice = `
     <label class="pneuma-mook-maker-radio pneuma-mook-maker-custom-choice">
-      <input type="radio" name="combatNumber" value="custom">
+      <input type="radio" name="combatNumber" value="custom"${currentCombatSelection === "custom" ? " checked" : ""}>
       <span>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.Custom")}</span>
       <input class="pneuma-mook-maker-custom-number" name="customCombatNumber" type="text"
-        inputmode="numeric" pattern="(?:[89]|1[0-9]|20)" maxlength="2"
-        aria-label="${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.CustomCombatNumber")}" disabled>
+        inputmode="numeric" pattern="(?:[89]|1[0-9]|20)" maxlength="2" value="${customCombatValue}"
+        aria-label="${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.CustomCombatNumber")}"${currentCombatSelection === "custom" ? "" : " disabled"}>
     </label>`;
   const combatChoices = getRadioChoices(
     "combatNumber",
     ["No change", "Civilian", "10", "11", "12", "13", "14"],
-    "No change",
+    currentCombatSelection,
     "pneuma-mook-maker-radio-column",
     customCombatChoice,
   );
@@ -82,8 +102,6 @@ function getMookMakerForm(token: Token, availableRoles: AvailableRole[]): string
     "LightArmorJack",
     "MedArmorJack",
   ];
-  const actor = token.actor ?? {};
-  const actorDocument = token.actor;
   const armorSelections = actorDocument
     ? getCurrentArmorSelections(actorDocument)
     : { body: "None", head: "None" };
@@ -254,13 +272,9 @@ export async function showMookMakerMenu(token: Token): Promise<void> {
         nonCombatOptions.find("fieldset").prop("disabled", !enabled);
 
         for (const name of ["secondarySkills", "tertiarySkills"]) {
-          const customSelected =
-            html
-              .find<HTMLInputElement>(`input[name="${name}"]:checked`)
-              .val() === "minus-custom";
           html
             .find<HTMLInputElement>(`input[name="${name}Minus"]`)
-            .prop("disabled", !enabled || !customSelected);
+            .prop("disabled", !enabled);
         }
       };
       html
@@ -268,9 +282,21 @@ export async function showMookMakerMenu(token: Token): Promise<void> {
         .on("change", refreshSkillAdjustment);
       html
         .find<HTMLInputElement>('input[name="secondarySkillsMinus"], input[name="tertiarySkillsMinus"]')
+        .on("focus", (event) => {
+          const input = event.currentTarget as HTMLInputElement;
+          const adjustmentName = input.name.replace(/Minus$/, "");
+          html
+            .find<HTMLInputElement>(`input[name="${adjustmentName}"][value="minus-custom"]`)
+            .prop("checked", true)
+            .trigger("change");
+        })
         .on("input", (event) => {
           const input = event.currentTarget as HTMLInputElement;
           input.value = input.value.replace(/\D/g, "").slice(0, 1);
+          const adjustmentName = input.name.replace(/Minus$/, "");
+          html
+            .find<HTMLInputElement>(`input[name="${adjustmentName}"][value="minus-custom"]`)
+            .prop("checked", true);
         });
       refreshSkillAdjustment();
 
