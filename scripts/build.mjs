@@ -18,9 +18,9 @@ if (result.status !== 0) process.exit(result.status ?? 1);
 await mkdir(dist, { recursive: true });
 await cp(resolve(projectRoot, "src", "styles"), resolve(dist, "styles"), { recursive: true });
 await cp(resolve(projectRoot, "src", "lang"), resolve(dist, "lang"), { recursive: true });
+await cp(resolve(projectRoot, "src", "templates"), resolve(dist, "templates"), { recursive: true });
 
 const manifest = JSON.parse(await readFile(resolve(projectRoot, "module.json"), "utf8"));
 await writeFile(resolve(dist, "module.json"), `${JSON.stringify(manifest, null, 2)}\n`);
 
 console.log(`Built ${manifest.title} v${manifest.version} in dist/`);
-
