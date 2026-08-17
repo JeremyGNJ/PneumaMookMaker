@@ -1,18 +1,6 @@
 import { MODULE_ID } from "./constants.js";
 import type { HitPointStats } from "./stats.js";
 
-export const ROLE_NAMES: Record<string, string> = {
-  solo: "Solo",
-  nomad: "Nomad",
-  netrunner: "Netrunner",
-};
-
-const ROLE_ABILITIES: Record<string, string> = {
-  Solo: "Combat Awareness",
-  Nomad: "Moto",
-  Netrunner: "Interface",
-};
-
 type RollbackAction = () => Promise<unknown>;
 
 export interface ApplyMookChanges {
@@ -25,6 +13,7 @@ export interface ApplyMookChanges {
   hitPointStats: HitPointStats;
   roleName: string;
   roleLevel: number;
+  roleSource?: Record<string, unknown>;
   armorUpdates: object[];
   skillUpdates: object[];
 }
@@ -58,7 +47,7 @@ async function rollbackApply(actions: RollbackAction[]): Promise<boolean> {
 export async function applyMookChanges(changes: ApplyMookChanges): Promise<boolean> {
   const {
     token, actor, initialName, newName, move, hitPoints, hitPointStats,
-    roleName, roleLevel, armorUpdates, skillUpdates,
+    roleName, roleLevel, roleSource, armorUpdates, skillUpdates,
   } = changes;
   const rollbackActions: RollbackAction[] = [];
   try {
@@ -95,15 +84,23 @@ export async function applyMookChanges(changes: ApplyMookChanges): Promise<boole
     }
 
     if (roleName && !existingRole) {
+      if (!roleSource) throw new Error(`Could not find the ${roleName} role in the system.`);
+      const roleData = foundry.utils.deepClone(roleSource) as Record<string, unknown>;
+      delete roleData._id;
+      delete roleData.folder;
+      delete roleData.sort;
+      delete roleData._stats;
+      const roleSystem = {
+        ...((roleData.system as Record<string, unknown> | undefined) ?? {}),
+        rank: roleLevel,
+      };
       const createdRoles = await (actor as unknown as {
         createEmbeddedDocuments(type: string, data: object[]): Promise<Item[] | undefined>;
       }).createEmbeddedDocuments("Item", [{
+        ...roleData,
         name: roleName,
         type: "role",
-        system: {
-          rank: roleLevel,
-          mainRoleAbility: ROLE_ABILITIES[roleName] ?? roleName,
-        },
+        system: roleSystem,
       }]);
       const createdRoleId = createdRoles?.[0]?.id;
       if (!createdRoleId) throw new Error(`Could not create the ${roleName} role.`);

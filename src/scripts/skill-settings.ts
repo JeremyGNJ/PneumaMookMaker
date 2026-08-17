@@ -1,4 +1,5 @@
 import { MODULE_ID } from "./constants.js";
+import { SkillClassificationForm } from "./skill-classification-form.js";
 
 export type SkillCategory = 1 | 2 | 3;
 export type SkillClassifications = Record<string, SkillCategory>;
@@ -108,6 +109,24 @@ function getKnownSkillNames(): string[] {
   return Array.from(names.values()).sort((left, right) => left.localeCompare(right));
 }
 
+export interface SkillClassificationRow {
+  key: string;
+  name: string;
+  category: SkillCategory;
+}
+
+export function getSkillClassificationRows(): SkillClassificationRow[] {
+  const classifications = getSkillClassifications();
+  return getKnownSkillNames().map((name) => {
+    const key = normalizeSkillKey(name);
+    return {
+      key,
+      name,
+      category: classifications[key] ?? (key.includes("martial arts") ? 1 : 3),
+    };
+  });
+}
+
 type SettingsApi = {
   get(scope: string, key: string): unknown;
   register(scope: string, key: string, data: object): void;
@@ -140,6 +159,14 @@ export function isPurgeConfirmationEnabled(): boolean {
   return getSettingsApi().get(MODULE_ID, PURGE_CONFIRMATION_SETTING_KEY) !== false;
 }
 
+export async function saveSkillClassifications(
+  classifications: SkillClassifications,
+): Promise<void> {
+  await (game.settings as unknown as {
+    set(scope: string, key: string, value: unknown): Promise<unknown>;
+  }).set(MODULE_ID, SETTING_KEY, normalizeClassifications(classifications));
+}
+
 export function registerSkillClassificationSettings(): void {
   const settings = getSettingsApi();
   settings.register(MODULE_ID, SETTING_KEY, {
@@ -151,13 +178,15 @@ export function registerSkillClassificationSettings(): void {
       console.info(`${MODULE_ID} | Skill classifications updated`);
     },
   });
-  settings.register(MODULE_ID, "settingsPlaceholder", {
-    name: "PNEUMA_MOOK_MAKER.Settings.Placeholder.Name",
-    hint: "PNEUMA_MOOK_MAKER.Settings.Placeholder.Hint",
-    scope: "world",
-    config: true,
-    type: String,
-    default: "",
+  (game.settings as unknown as {
+    registerMenu(scope: string, key: string, data: object): void;
+  }).registerMenu(MODULE_ID, "skillClassificationsMenu", {
+    name: "PNEUMA_MOOK_MAKER.Settings.SkillClassifications.Name",
+    hint: "PNEUMA_MOOK_MAKER.Settings.SkillClassifications.Hint",
+    label: "PNEUMA_MOOK_MAKER.Settings.SkillClassifications.Button",
+    icon: "fas fa-list-check",
+    type: SkillClassificationForm,
+    restricted: true,
   });
   settings.register(MODULE_ID, PURGE_CONFIRMATION_SETTING_KEY, {
     name: "PNEUMA_MOOK_MAKER.Settings.ConfirmPurge.Name",

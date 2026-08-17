@@ -89,6 +89,7 @@
 
 .pneuma-mook-maker-custom-number {
   flex: 0 0 2.75rem !important;
+  margin-left: 0.5rem;
   text-align: center;
 }
 
@@ -122,7 +123,7 @@
 .pneuma-mook-maker-combat-layout {
   display: grid;
   gap: 0.65rem;
-  grid-template-columns: 110px 220px;
+  grid-template-columns: 135px 195px;
 }
 
 .pneuma-mook-maker-primary-combat-options {
@@ -132,7 +133,7 @@
 
 .pneuma-mook-maker-non-combat-pane {
   min-width: 0;
-  width: 220px;
+  width: 195px;
 }
 
 .pneuma-mook-maker-non-combat-toggle {
@@ -190,6 +191,18 @@
   min-width: 185px;
 }
 
+.pneuma-mook-maker-armor-note {
+  color: var(--color-text-dark-secondary);
+  font-size: 0.8rem;
+  grid-column: 1 / -1;
+  margin: -0.25rem 0 0;
+  max-width: 390px;
+}
+
+.pneuma-mook-maker-armor-note i {
+  margin-right: 0.25rem;
+}
+
 .pneuma-mook-maker-radio-column {
   display: flex;
   flex-direction: column;
@@ -233,8 +246,41 @@
   color: #ff3030;
 }
 
-input[name="pneuma-mook-maker.settingsPlaceholder"] {
-  display: none;
+.pneuma-mook-maker-skill-config-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  height: 100%;
+}
+
+.pneuma-mook-maker-skill-config-form > p {
+  margin: 0;
+}
+
+.pneuma-mook-maker-skill-list {
+  border: 1px solid var(--color-border-light-primary);
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.pneuma-mook-maker-skill-list table {
+  margin: 0;
+}
+
+.pneuma-mook-maker-skill-list thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.pneuma-mook-maker-skill-list td:last-child,
+.pneuma-mook-maker-skill-list th:last-child {
+  width: 155px;
+}
+
+.pneuma-mook-maker-skill-config-form .sheet-footer {
+  gap: 0.5rem;
 }
 
 @media (max-width: 480px) {
