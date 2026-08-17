@@ -1,34 +1,5 @@
 # Pneuma Mook Maker
 
-A TypeScript module for Foundry Virtual Tabletop v12 and Cyberpunk RED Core.
-
-## Development
-
-Requirements: Node.js 20 or newer.
-
-```sh
-npm install
-npm run check
-npm run build
-```
-
-The build is written to `dist/`. For local Foundry development, place or link that directory at:
-
-```text
-<Foundry user data>/Data/modules/pneuma-mook-maker
-```
-
-The module requires Cyberpunk RED Core v0.92.1 or newer. Its implementation
-entry point is `src/scripts/main.ts`.
-
-### Source layout
-
-- `tokens.ts` registers token creation and Token HUD hooks.
-- `mook-form.ts` renders the Mook Maker form and validates user input.
-- `apply-mook.ts` applies changes transactionally and rolls back failures.
-- `armor.ts`, `skills.ts`, and `stats.ts` contain calculation/update helpers.
-- `purge.ts` and `promotion.ts` own their respective workflows.
-- `folders.ts` manages MookMaker folders and the versioned default template.
 
 ## Current behavior
 
