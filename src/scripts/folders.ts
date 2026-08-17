@@ -147,7 +147,13 @@ async function ensureDefaultMookTemplate(templatesFolder: Folder): Promise<void>
         await existing.createEmbeddedDocuments("Item", missingItems);
       }
       await (existing as unknown as { update(data: object): Promise<unknown> }).update({
+        img: template.img,
         "prototypeToken.actorLink": false,
+        "prototypeToken.randomImg": true,
+        "prototypeToken.texture.src": foundry.utils.getProperty(
+          actorData,
+          "prototypeToken.texture.src",
+        ),
         [`flags.${MODULE_ID}.${DEFAULT_MOOK_TEMPLATE_FLAG}`]: true,
         [`flags.${MODULE_ID}.${DEFAULT_MOOK_TEMPLATE_VERSION_FLAG}`]:
           DEFAULT_MOOK_TEMPLATE_VERSION,

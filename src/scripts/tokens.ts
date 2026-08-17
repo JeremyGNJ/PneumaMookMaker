@@ -33,7 +33,7 @@ export function registerTokenHudAction(): void {
     const button = $(
       `<div class="control-icon pneuma-mook-maker-control" ` +
         `data-action="pneuma-mook-maker" data-tooltip="${title}" ` +
-        `aria-label="${title}"><i class="fas fa-hammer"></i></div>`,
+        `aria-label="${title}"><i class="fas fa-user-gear"></i></div>`,
     );
     button.on("click", (event) => {
       event.preventDefault();

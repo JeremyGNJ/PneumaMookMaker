@@ -25,7 +25,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "ptokens/NCA_Public/Civilians/Male_Mercs/*",
+      "src": "modules/pneuma-mook-maker/assets/tokens/mook-*.png",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,
@@ -115,7 +115,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Melee Weapon",
@@ -142,7 +155,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Athletics",
@@ -169,7 +195,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Trading",
@@ -196,7 +235,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Electronics/Security Tech",
@@ -223,7 +275,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Animal Handling",
@@ -250,7 +315,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Resist Torture/Drugs",
@@ -277,7 +355,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "First Aid",
@@ -304,7 +395,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Paint/Draw/Sculpt",
@@ -331,7 +435,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Bureaucracy",
@@ -358,7 +475,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Riding",
@@ -385,7 +515,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Gamble",
@@ -412,7 +555,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Evasion",
@@ -439,7 +595,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Conversation",
@@ -466,7 +635,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Local Expert (Your Home)",
@@ -493,7 +675,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Land Vehicle Tech",
@@ -520,7 +715,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Streetwise",
@@ -547,7 +755,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Contortionist",
@@ -574,7 +795,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Human Perception",
@@ -601,7 +835,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Criminology",
@@ -628,7 +875,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Composition",
@@ -655,7 +915,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Cybertech",
@@ -682,7 +955,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Language (Streetslang)",
@@ -709,7 +995,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Photography/Film",
@@ -736,7 +1035,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Accounting",
@@ -763,7 +1075,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Sea Vehicle Tech",
@@ -790,7 +1115,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Wardrobe & Style",
@@ -817,7 +1155,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Cryptography",
@@ -844,7 +1195,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Deduction",
@@ -871,7 +1235,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Pilot Sea Vehicle",
@@ -898,7 +1275,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Heavy Weapons",
@@ -925,7 +1315,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Drive Land Vehicle",
@@ -952,7 +1355,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Shoulder Arms",
@@ -979,7 +1395,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Autofire",
@@ -1006,7 +1435,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Weaponstech",
@@ -1033,7 +1475,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Interrogation",
@@ -1060,7 +1515,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Tracking",
@@ -1087,7 +1555,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Library Search",
@@ -1114,7 +1595,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Pick Pocket",
@@ -1141,7 +1635,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Persuasion",
@@ -1168,7 +1675,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Archery",
@@ -1195,7 +1715,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Endurance",
@@ -1222,7 +1755,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Concentration",
@@ -1249,7 +1795,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Personal Grooming",
@@ -1276,7 +1835,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Brawling",
@@ -1303,7 +1875,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Demolitions",
@@ -1330,7 +1915,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Business",
@@ -1357,7 +1955,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Wilderness Survival",
@@ -1384,7 +1995,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Handgun",
@@ -1411,7 +2035,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Education",
@@ -1438,7 +2075,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Perception",
@@ -1465,7 +2115,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Lip Reading",
@@ -1492,7 +2155,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Bribery",
@@ -1519,7 +2195,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Pick Lock",
@@ -1546,7 +2235,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Conceal/Reveal Object",
@@ -1573,7 +2275,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Acting",
@@ -1600,7 +2315,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Air Vehicle Tech",
@@ -1627,7 +2355,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Pilot Air Vehicle",
@@ -1654,7 +2395,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Forgery",
@@ -1681,7 +2435,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Tactics",
@@ -1708,7 +2475,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Stealth",
@@ -1735,7 +2515,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Paramedic",
@@ -1762,7 +2555,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Dance",
@@ -1789,7 +2595,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "External (7 Option Slots)",
@@ -1864,7 +2683,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Fashionware (7 Option Slots)",
@@ -1939,7 +2771,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "name": "Internal (7 Option Slots)",
@@ -2014,619 +2859,20 @@
       "effects": [],
       "folder": null,
       "sort": 0,
-      "flags": {}
-    },
-    {
-      "folder": "7KfY05Nc586aFBh8",
-      "name": "Neuroport (Free)",
-      "type": "cyberware",
-      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/neural_link.svg",
-      "system": {
-        "weaponType": "",
-        "weaponSkill": "",
-        "fireModes": {
-          "autoFire": 0,
-          "suppressiveFire": false
-        },
-        "damage": "1d6",
-        "rof": 1,
-        "dvTable": "",
-        "isRanged": false,
-        "unarmedAutomaticCalculation": true,
-        "attackmod": 0,
-        "description": {
-          "value": "<p>Use this variation when applying during character creation.</p><p>Grants the effects of the following:</p><ul><li><p><strong>Neural Link:</strong> Contains all option slots. None of the additions listed in the Neuroport take up any option slots.</p></li><li><p><strong>Holophone:</strong> A functioning phone. Does not have an AI like an Agent.</p></li><li><p><strong>Biomonitor:</strong> Monitors the user's health.</p></li><li><p><strong>Virtu (AKA Virtuality):</strong> Allows the user to experience virtual events and performances, and can function as Virtuality Goggles. Does not display braindances.</p></li><li><p><strong>HUD (aka Chyron):</strong> Displays information from the Biomonitor, HUD, Holophone, etc. Also provides translations for spoken languages.</p></li><li><p><strong>Two Shard Slots (aka Chipware Sockets):</strong> Allows the use of Chipware.</p></li><li><p><strong>Personal Link (aka Interface Plug):</strong> Allows direct linking to machinery and computers which support it.</p></li></ul>"
-        },
-        "source": {
-          "book": "CEMK Rules",
-          "page": 35
-        },
-        "favorite": false,
-        "revealed": true,
-        "usage": "toggled",
-        "isElectronic": true,
-        "providesHardening": false,
-        "installLocation": "hospital",
-        "size": 1,
-        "usesType": "magazine",
-        "magazine": {
-          "value": 0,
-          "max": 0,
-          "ammoData": null
-        },
-        "ammoVariety": [],
-        "concealable": {
-          "concealable": false,
-          "isConcealed": false
-        },
-        "brand": "",
-        "price": {
-          "market": 0
-        },
-        "installedItems": {
-          "allowedTypes": [
-            "cyberware",
-            "itemUpgrade"
-          ],
-          "allowed": true,
-          "list": [
-            "KNqC1TIKDFr4ggt0",
-            "fjAK6MMitWoJ4QxC",
-            "4rJAEFozs3QExxTU",
-            "gYdHj8GDtmTj2skG",
-            "lZBHa3c1hiJit8p6",
-            "1NM00oo1UtVBIJaF"
-          ],
-          "usedSlots": 0,
-          "slots": 5
-        },
-        "type": "neuralWare",
-        "isWeapon": false,
-        "isFoundational": true,
-        "core": false,
-        "humanityLoss": {
-          "static": 0,
-          "roll": "0"
-        },
-        "canIgnoreArmor": true,
-        "ignoreArmorPercent": 50,
-        "critFailEffect": "jammed",
-        "ignoreBelowSP": 0
+      "flags": {},
+      "ownership": {
+        "default": 0
       },
-      "effects": [],
-      "flags": {
-        "scene-packer": {
-          "hash": "bd84cf20dd58765432c0f603f8b6ddf9e2a933d0",
-          "sourceId": "Item.pBNMuXDUEYa2s3hT"
-        },
-        "core": {},
-        "cyberpunk-red-core": {
-          "_migration": {
-            "previous": "24",
-            "current": 33
-          }
-        }
-      },
-      "_id": "9YGd9I2dba0T0Aun",
-      "sort": 0
-    },
-    {
-      "effects": [],
-      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/interface_plugs.svg",
-      "name": "Personal Link",
-      "system": {
-        "weaponType": "assaultRifle",
-        "weaponSkill": "Archery",
-        "fireModes": {
-          "autoFire": 0,
-          "suppressiveFire": false
-        },
-        "damage": "1d6",
-        "rof": 1,
-        "dvTable": "",
-        "isRanged": false,
-        "unarmedAutomaticCalculation": true,
-        "attackmod": 0,
-        "description": {
-          "value": "<p>Plugs in the wrist or head to allow you to connect to machines/systems hands-free. </p>"
-        },
-        "source": {
-          "book": "CEMK Rules",
-          "page": 36
-        },
-        "favorite": false,
-        "revealed": true,
-        "usage": "toggled",
-        "isElectronic": true,
-        "providesHardening": false,
-        "installLocation": "clinic",
-        "size": 0,
-        "usesType": "magazine",
-        "magazine": {
-          "value": 0,
-          "max": 0,
-          "ammoData": null
-        },
-        "ammoVariety": [],
-        "concealable": {
-          "concealable": false,
-          "isConcealed": false
-        },
-        "brand": "",
-        "price": {
-          "market": 0
-        },
-        "installedItems": {
-          "allowedTypes": [
-            "itemUpgrade"
-          ],
-          "allowed": false,
-          "list": [],
-          "usedSlots": 0,
-          "slots": 3
-        },
-        "type": "neuralWare",
-        "isWeapon": false,
-        "isFoundational": false,
-        "core": false,
-        "humanityLoss": {
-          "static": 0,
-          "roll": "0"
-        },
-        "canIgnoreArmor": true,
-        "ignoreArmorPercent": 50,
-        "critFailEffect": "jammed",
-        "ignoreBelowSP": 0
-      },
-      "type": "cyberware",
-      "folder": "cuVprqrwFMNyjNqV",
-      "flags": {
-        "core": {},
-        "scene-packer": {
-          "sourceId": "Compendium.cyberpunk-red-core.core_cyberware.Item.KofoAolDFb3rvpbL",
-          "hash": "00779b16651fc06041d7629216f8dd03dcf8b961"
-        },
-        "cyberpunk-red-core": {
-          "_migration": {
-            "previous": "24",
-            "current": 33
-          }
-        }
-      },
-      "_id": "lZBHa3c1hiJit8p6",
-      "sort": 100000
-    },
-    {
-      "effects": [],
-      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/chyron.svg",
-      "name": "HUD",
-      "system": {
-        "weaponType": "assaultRifle",
-        "weaponSkill": "Archery",
-        "fireModes": {
-          "autoFire": 0,
-          "suppressiveFire": false
-        },
-        "damage": "1d6",
-        "rof": 1,
-        "dvTable": "",
-        "isRanged": false,
-        "unarmedAutomaticCalculation": true,
-        "attackmod": 0,
-        "description": {
-          "value": "<p>Tiny screen in your eye. Provides picture-in-picture for those boring moments. Comes pre-installed into a Neuroport.</p>"
-        },
-        "source": {
-          "book": "CEMK Rules",
-          "page": 36
-        },
-        "favorite": false,
-        "revealed": true,
-        "usage": "toggled",
-        "isElectronic": true,
-        "providesHardening": false,
-        "installLocation": "mall",
-        "size": 0,
-        "usesType": "magazine",
-        "magazine": {
-          "value": 0,
-          "max": 0,
-          "ammoData": null
-        },
-        "ammoVariety": [],
-        "concealable": {
-          "concealable": false,
-          "isConcealed": false
-        },
-        "brand": "",
-        "price": {
-          "market": 0
-        },
-        "installedItems": {
-          "allowedTypes": [
-            "itemUpgrade"
-          ],
-          "allowed": false,
-          "list": [],
-          "usedSlots": 0,
-          "slots": 3
-        },
-        "type": "neuralWare",
-        "isWeapon": false,
-        "isFoundational": false,
-        "core": false,
-        "humanityLoss": {
-          "static": 0,
-          "roll": "0"
-        },
-        "canIgnoreArmor": true,
-        "ignoreArmorPercent": 50,
-        "critFailEffect": "jammed",
-        "ignoreBelowSP": 0
-      },
-      "type": "cyberware",
-      "folder": "cuVprqrwFMNyjNqV",
-      "flags": {
-        "core": {},
-        "scene-packer": {
-          "sourceId": "Compendium.cyberpunk-red-core.core_cyberware.Item.pYFotQ9V3dtVO4ks",
-          "hash": "44bd67d62ad10f757a48145c6ee4f6405405cf5c"
-        },
-        "cyberpunk-red-core": {
-          "_migration": {
-            "previous": "24",
-            "current": 33
-          }
-        }
-      },
-      "_id": "KNqC1TIKDFr4ggt0",
-      "sort": 400000
-    },
-    {
-      "effects": [],
-      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/virtuality.svg",
-      "name": "Virtu",
-      "system": {
-        "weaponType": "assaultRifle",
-        "weaponSkill": "Archery",
-        "fireModes": {
-          "autoFire": 0,
-          "suppressiveFire": false
-        },
-        "damage": "1d6",
-        "rof": 1,
-        "dvTable": "",
-        "isRanged": false,
-        "unarmedAutomaticCalculation": true,
-        "attackmod": 0,
-        "description": {
-          "value": "<p>Built-in virtuality goggles. Comes pre-installed into a Neuroport.</p>"
-        },
-        "source": {
-          "book": "CEMK Rules",
-          "page": 36
-        },
-        "favorite": false,
-        "revealed": true,
-        "usage": "toggled",
-        "isElectronic": true,
-        "providesHardening": false,
-        "installLocation": "mall",
-        "size": 0,
-        "usesType": "magazine",
-        "magazine": {
-          "value": 0,
-          "max": 0,
-          "ammoData": null
-        },
-        "ammoVariety": [],
-        "concealable": {
-          "concealable": false,
-          "isConcealed": false
-        },
-        "brand": "",
-        "price": {
-          "market": 0
-        },
-        "installedItems": {
-          "allowedTypes": [
-            "itemUpgrade"
-          ],
-          "allowed": false,
-          "list": [],
-          "usedSlots": 0,
-          "slots": 3
-        },
-        "type": "neuralWare",
-        "isWeapon": false,
-        "isFoundational": false,
-        "core": false,
-        "humanityLoss": {
-          "static": 0,
-          "roll": "0"
-        },
-        "canIgnoreArmor": true,
-        "ignoreArmorPercent": 50,
-        "critFailEffect": "jammed",
-        "ignoreBelowSP": 0
-      },
-      "type": "cyberware",
-      "folder": "cuVprqrwFMNyjNqV",
-      "flags": {
-        "core": {},
-        "scene-packer": {
-          "sourceId": "Compendium.cyberpunk-red-core.core_cyberware.Item.Ie6Wzt8dwpdQ516v",
-          "hash": "9c3e9ecc21dbb1158386e6573974063f07f38ead"
-        },
-        "cyberpunk-red-core": {
-          "_migration": {
-            "previous": "24",
-            "current": 33
-          }
-        }
-      },
-      "_id": "1NM00oo1UtVBIJaF",
-      "sort": 300000
-    },
-    {
-      "effects": [],
-      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/internal_agent.svg",
-      "name": "Holophone",
-      "system": {
-        "weaponType": "assaultRifle",
-        "weaponSkill": "Archery",
-        "fireModes": {
-          "autoFire": 0,
-          "suppressiveFire": false
-        },
-        "damage": "1d6",
-        "rof": 1,
-        "dvTable": "",
-        "isRanged": false,
-        "unarmedAutomaticCalculation": true,
-        "attackmod": 0,
-        "description": {
-          "value": "<p>Built in holophone. Audio only but can be linked with other cybergear. Comes pre-installed into a Neuroport.</p>"
-        },
-        "source": {
-          "book": "CEMK Rules",
-          "page": 36
-        },
-        "favorite": false,
-        "revealed": true,
-        "usage": "installed",
-        "isElectronic": true,
-        "providesHardening": false,
-        "installLocation": "mall",
-        "size": 0,
-        "usesType": "magazine",
-        "magazine": {
-          "value": 0,
-          "max": 0,
-          "ammoData": null
-        },
-        "ammoVariety": [],
-        "concealable": {
-          "concealable": false,
-          "isConcealed": false
-        },
-        "brand": "",
-        "price": {
-          "market": 0
-        },
-        "installedItems": {
-          "allowedTypes": [
-            "itemUpgrade"
-          ],
-          "allowed": false,
-          "list": [],
-          "usedSlots": 0,
-          "slots": 3
-        },
-        "type": "neuralWare",
-        "isWeapon": false,
-        "isFoundational": false,
-        "core": false,
-        "humanityLoss": {
-          "static": 0,
-          "roll": "0"
-        },
-        "canIgnoreArmor": true,
-        "ignoreArmorPercent": 50,
-        "critFailEffect": "jammed",
-        "ignoreBelowSP": 0
-      },
-      "type": "cyberware",
-      "folder": "cuVprqrwFMNyjNqV",
-      "flags": {
-        "core": {},
-        "scene-packer": {
-          "sourceId": "Compendium.cyberpunk-red-core.core_cyberware.Item.2AE8D8ZdRA815IZK",
-          "hash": "9c611ea63588e65d02c5bfbe98bdf3d5e188137a"
-        },
-        "cyberpunk-red-core": {
-          "_migration": {
-            "previous": "24",
-            "current": 33
-          }
-        }
-      },
-      "_id": "fjAK6MMitWoJ4QxC",
-      "sort": 500000
-    },
-    {
-      "effects": [],
-      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/biomonitor.svg",
-      "name": "Neuroport Biomonitor",
-      "system": {
-        "weaponType": "assaultRifle",
-        "weaponSkill": "Archery",
-        "fireModes": {
-          "autoFire": 0,
-          "suppressiveFire": false
-        },
-        "damage": "1d6",
-        "rof": 1,
-        "dvTable": "",
-        "isRanged": false,
-        "unarmedAutomaticCalculation": true,
-        "attackmod": 0,
-        "description": {
-          "value": "<p>Provides an LED showing vitals readouts. Can be linked to your HUD. Comes pre-installed in a Neuroport.</p>"
-        },
-        "source": {
-          "book": "CEMK Rules",
-          "page": 36
-        },
-        "favorite": false,
-        "revealed": true,
-        "usage": "toggled",
-        "isElectronic": true,
-        "providesHardening": false,
-        "installLocation": "mall",
-        "size": 0,
-        "usesType": "magazine",
-        "magazine": {
-          "value": 0,
-          "max": 0,
-          "ammoData": null
-        },
-        "ammoVariety": [],
-        "concealable": {
-          "concealable": false,
-          "isConcealed": false
-        },
-        "brand": "",
-        "price": {
-          "market": 0
-        },
-        "installedItems": {
-          "allowedTypes": [
-            "itemUpgrade"
-          ],
-          "allowed": false,
-          "list": [],
-          "usedSlots": 0,
-          "slots": 3
-        },
-        "type": "neuralWare",
-        "isWeapon": false,
-        "isFoundational": false,
-        "core": false,
-        "humanityLoss": {
-          "static": 0,
-          "roll": "0"
-        },
-        "canIgnoreArmor": true,
-        "ignoreArmorPercent": 50,
-        "critFailEffect": "jammed",
-        "ignoreBelowSP": 0
-      },
-      "type": "cyberware",
-      "folder": "cuVprqrwFMNyjNqV",
-      "flags": {
-        "core": {},
-        "scene-packer": {
-          "sourceId": "Compendium.cyberpunk-red-core.core_cyberware.Item.0d2bEozOFhfPgkUP",
-          "hash": "c7359ca9455c97c88a87bacb0149903fa6422bca"
-        },
-        "cyberpunk-red-core": {
-          "_migration": {
-            "previous": "24",
-            "current": 33
-          }
-        }
-      },
-      "_id": "4rJAEFozs3QExxTU",
-      "sort": 200000
-    },
-    {
-      "effects": [],
-      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/chipware_socket.svg",
-      "name": "Neuroport Shard Slots",
-      "system": {
-        "weaponType": "assaultRifle",
-        "weaponSkill": "Archery",
-        "fireModes": {
-          "autoFire": 0,
-          "suppressiveFire": false
-        },
-        "damage": "1d6",
-        "rof": 1,
-        "dvTable": "",
-        "isRanged": false,
-        "unarmedAutomaticCalculation": true,
-        "attackmod": 0,
-        "description": {
-          "value": "<p>Two sockets for installation and removal of a piece of chipware. Comes installed in a Neuroport.</p>"
-        },
-        "source": {
-          "book": "CEMK Rules",
-          "page": 36
-        },
-        "favorite": false,
-        "revealed": true,
-        "usage": "toggled",
-        "isElectronic": true,
-        "providesHardening": false,
-        "installLocation": "clinic",
-        "size": 0,
-        "usesType": "magazine",
-        "magazine": {
-          "value": 0,
-          "max": 0,
-          "ammoData": null
-        },
-        "ammoVariety": [],
-        "concealable": {
-          "concealable": false,
-          "isConcealed": false
-        },
-        "brand": "",
-        "price": {
-          "market": 100
-        },
-        "installedItems": {
-          "allowedTypes": [
-            "itemUpgrade",
-            "cyberware"
-          ],
-          "allowed": true,
-          "list": [],
-          "usedSlots": 0,
-          "slots": 2
-        },
-        "type": "neuralWare",
-        "isWeapon": false,
-        "isFoundational": false,
-        "core": false,
-        "humanityLoss": {
-          "static": 0,
-          "roll": "0"
-        },
-        "canIgnoreArmor": true,
-        "ignoreArmorPercent": 50,
-        "critFailEffect": "jammed",
-        "ignoreBelowSP": 0
-      },
-      "type": "cyberware",
-      "folder": "cuVprqrwFMNyjNqV",
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.cyberpunk-red-core.core_cyberware.Item.IJarQGKk5rPayoLT"
-        },
-        "scene-packer": {
-          "hash": "8c80659260823c5c33e1bbb63dc72f2f7aae5a1f"
-        },
-        "cyberpunk-red-core": {
-          "_migration": {
-            "previous": "24",
-            "current": 33
-          }
-        }
-      },
-      "sort": 600000,
-      "_id": "gYdHj8GDtmTj2skG"
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "KgCWLiXbw7OdKPDy",
@@ -2643,7 +2889,7 @@
       "name": "Medium Pistol (Basic)",
       "system": {
         "ablationValue": 1,
-        "amount": 40,
+        "amount": 30,
         "brand": "",
         "concealable": {
           "concealable": true,
@@ -2679,7 +2925,20 @@
       },
       "type": "ammo",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "NXGei7WAiCHQPlMQ",
@@ -2696,7 +2955,7 @@
       "name": "Rifle (Basic)",
       "system": {
         "ablationValue": 1,
-        "amount": 80,
+        "amount": 100,
         "brand": "",
         "concealable": {
           "concealable": true,
@@ -2732,7 +2991,20 @@
       },
       "type": "ammo",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "w5ovBm1qYt8yDtDp",
@@ -2749,7 +3021,7 @@
       "name": "Very Heavy Pistol (Basic)",
       "system": {
         "ablationValue": 1,
-        "amount": 40,
+        "amount": 30,
         "brand": "",
         "concealable": {
           "concealable": true,
@@ -2785,7 +3057,20 @@
       },
       "type": "ammo",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "FoAwYStVllADuYNd",
@@ -2802,7 +3087,7 @@
       "name": "Heavy Pistol (Basic)",
       "system": {
         "ablationValue": 1,
-        "amount": 40,
+        "amount": 30,
         "brand": "",
         "concealable": {
           "concealable": true,
@@ -2838,7 +3123,20 @@
       },
       "type": "ammo",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "ANMAsw4fB9zQ4EFG",
@@ -2891,7 +3189,20 @@
       },
       "type": "ammo",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "dJxtp6JC1LhQkWfJ",
@@ -2924,7 +3235,7 @@
         },
         "dvTable": "DV Assault Rifle",
         "equipped": "owned",
-        "favorite": true,
+        "favorite": false,
         "fireModes": {
           "autoFire": 4,
           "suppressiveFire": true
@@ -2938,7 +3249,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "NXGei7WAiCHQPlMQ"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -2946,7 +3259,7 @@
         "magazine": {
           "ammoData": null,
           "max": 25,
-          "value": 0
+          "value": 25
         },
         "price": {
           "market": 500
@@ -2966,7 +3279,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "JsaKWwGDpYpHc42y",
@@ -3013,7 +3339,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "NXGei7WAiCHQPlMQ"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -3021,7 +3349,7 @@
         "magazine": {
           "ammoData": null,
           "max": 25,
-          "value": 0
+          "value": 25
         },
         "price": {
           "market": 100
@@ -3041,7 +3369,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "MiABKBZqWct2ndl9",
@@ -3073,7 +3414,7 @@
           "value": "<p>A concealable, heavy pistol.</p>"
         },
         "dvTable": "DV Pistol",
-        "equipped": "equipped",
+        "equipped": "owned",
         "favorite": true,
         "fireModes": {
           "autoFire": 0,
@@ -3088,7 +3429,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "FoAwYStVllADuYNd"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -3096,7 +3439,7 @@
         "magazine": {
           "ammoData": null,
           "max": 8,
-          "value": 0
+          "value": 8
         },
         "price": {
           "market": 100
@@ -3116,7 +3459,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "RgZZVr3M2SMUCF5d",
@@ -3163,7 +3519,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "FoAwYStVllADuYNd"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -3171,7 +3529,7 @@
         "magazine": {
           "ammoData": null,
           "max": 8,
-          "value": 0
+          "value": 8
         },
         "price": {
           "market": 50
@@ -3191,7 +3549,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "AGK2eyFfDmgvTfHf",
@@ -3238,7 +3609,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "FoAwYStVllADuYNd"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -3246,7 +3619,7 @@
         "magazine": {
           "ammoData": null,
           "max": 8,
-          "value": 0
+          "value": 8
         },
         "price": {
           "market": 500
@@ -3266,7 +3639,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "It4YdxWqbhvF8eI8",
@@ -3313,7 +3699,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "NXGei7WAiCHQPlMQ"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -3321,7 +3709,7 @@
         "magazine": {
           "ammoData": null,
           "max": 25,
-          "value": 0
+          "value": 25
         },
         "price": {
           "market": 1000
@@ -3341,7 +3729,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "pSTcUow3aIWyCvbU",
@@ -3374,7 +3775,7 @@
         },
         "dvTable": "DV SMG",
         "equipped": "owned",
-        "favorite": true,
+        "favorite": false,
         "fireModes": {
           "autoFire": 3,
           "suppressiveFire": true
@@ -3388,7 +3789,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "FoAwYStVllADuYNd"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -3396,7 +3799,7 @@
         "magazine": {
           "ammoData": null,
           "max": 40,
-          "value": 0
+          "value": 40
         },
         "price": {
           "market": 100
@@ -3416,7 +3819,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "1Hj2lrkadWk8uTsX",
@@ -3463,7 +3879,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "FoAwYStVllADuYNd"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -3471,7 +3889,7 @@
         "magazine": {
           "ammoData": null,
           "max": 40,
-          "value": 0
+          "value": 40
         },
         "price": {
           "market": 50
@@ -3491,7 +3909,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "jFoFUCJiAc3GRChr",
@@ -3538,7 +3969,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "FoAwYStVllADuYNd"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -3546,7 +3979,7 @@
         "magazine": {
           "ammoData": null,
           "max": 40,
-          "value": 0
+          "value": 40
         },
         "price": {
           "market": 500
@@ -3566,7 +3999,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "VfnOKLZiNARsAgQ7",
@@ -3639,7 +4085,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "b3MaLYEh5CtUWdj0",
@@ -3712,7 +4171,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "usu700eeGRVX8THn",
@@ -3785,7 +4257,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "GXlIRNPOY39KbdS6",
@@ -3832,7 +4317,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "KgCWLiXbw7OdKPDy"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -3840,7 +4327,7 @@
         "magazine": {
           "ammoData": null,
           "max": 12,
-          "value": 0
+          "value": 12
         },
         "price": {
           "market": 50
@@ -3860,7 +4347,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "1GTY2KJLranwQu1e",
@@ -3907,7 +4407,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "KgCWLiXbw7OdKPDy"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -3915,7 +4417,7 @@
         "magazine": {
           "ammoData": null,
           "max": 12,
-          "value": 0
+          "value": 12
         },
         "price": {
           "market": 100
@@ -3935,7 +4437,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "EN3SObo5Qwj7Djud",
@@ -3983,7 +4498,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "ANMAsw4fB9zQ4EFG"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -3991,7 +4508,7 @@
         "magazine": {
           "ammoData": null,
           "max": 4,
-          "value": 0
+          "value": 4
         },
         "price": {
           "market": 500
@@ -4011,7 +4528,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "gX80KkPclztub8nO",
@@ -4059,7 +4589,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "ANMAsw4fB9zQ4EFG"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -4067,7 +4599,7 @@
         "magazine": {
           "ammoData": null,
           "max": 4,
-          "value": 0
+          "value": 4
         },
         "price": {
           "market": 1000
@@ -4087,7 +4619,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "VuovwdzYB7sgna6g",
@@ -4135,7 +4680,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "ANMAsw4fB9zQ4EFG"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -4143,7 +4690,7 @@
         "magazine": {
           "ammoData": null,
           "max": 4,
-          "value": 0
+          "value": 4
         },
         "price": {
           "market": 100
@@ -4163,7 +4710,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "ryrzVLi0CCr6VDCJ",
@@ -4196,7 +4756,7 @@
         },
         "dvTable": "DV SMG",
         "equipped": "owned",
-        "favorite": true,
+        "favorite": false,
         "fireModes": {
           "autoFire": 3,
           "suppressiveFire": true
@@ -4210,7 +4770,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "KgCWLiXbw7OdKPDy"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -4218,7 +4780,7 @@
         "magazine": {
           "ammoData": null,
           "max": 30,
-          "value": 0
+          "value": 30
         },
         "price": {
           "market": 100
@@ -4238,7 +4800,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "3fMjrdpC4VR3bwBE",
@@ -4285,7 +4860,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "KgCWLiXbw7OdKPDy"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -4293,7 +4870,7 @@
         "magazine": {
           "ammoData": null,
           "max": 30,
-          "value": 0
+          "value": 30
         },
         "price": {
           "market": 500
@@ -4313,7 +4890,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "mJD3UAKpNbytwqxW",
@@ -4360,7 +4950,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "KgCWLiXbw7OdKPDy"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -4368,7 +4960,7 @@
         "magazine": {
           "ammoData": null,
           "max": 30,
-          "value": 0
+          "value": 30
         },
         "price": {
           "market": 50
@@ -4388,7 +4980,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "LnknlcUgF3HuadUw",
@@ -4461,7 +5066,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "TpyAbREwPnLtpdpc",
@@ -4534,7 +5152,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "j6bhkDrU6Rj3Ls1w",
@@ -4607,7 +5238,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "LPAKJPbjTK5lqU7R",
@@ -4680,7 +5324,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "iBOfy3mlQ21KGPOl",
@@ -4727,7 +5384,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "w5ovBm1qYt8yDtDp"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -4735,7 +5394,7 @@
         "magazine": {
           "ammoData": null,
           "max": 8,
-          "value": 0
+          "value": 8
         },
         "price": {
           "market": 100
@@ -4755,7 +5414,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "eMYijPDdJY7yE38g",
@@ -4802,7 +5474,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "w5ovBm1qYt8yDtDp"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -4810,7 +5484,7 @@
         "magazine": {
           "ammoData": null,
           "max": 8,
-          "value": 0
+          "value": 8
         },
         "price": {
           "market": 500
@@ -4830,7 +5504,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "Cnj8vnbbg1xIh07e",
@@ -4877,7 +5564,9 @@
             "itemUpgrade",
             "ammo"
           ],
-          "list": [],
+          "list": [
+            "w5ovBm1qYt8yDtDp"
+          ],
           "slots": 3,
           "usedSlots": 0
         },
@@ -4885,7 +5574,7 @@
         "magazine": {
           "ammoData": null,
           "max": 8,
-          "value": 0
+          "value": 8
         },
         "price": {
           "market": 50
@@ -4905,7 +5594,20 @@
       },
       "type": "weapon",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "GYsncrUD7UyOAJko",
@@ -4970,7 +5672,20 @@
       },
       "type": "armor",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "QeJO9C0bMbH9vTZE",
@@ -5035,7 +5750,20 @@
       },
       "type": "armor",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "1AQfzSUyCx4xerXg",
@@ -5063,7 +5791,7 @@
         "description": {
           "value": "<p>Light version of an Armorjack. No armor penalty.</p>"
         },
-        "equipped": "equipped",
+        "equipped": "owned",
         "favorite": true,
         "headLocation": {
           "ablation": 0,
@@ -5100,7 +5828,20 @@
       },
       "type": "armor",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": 1786931480816,
+        "lastModifiedBy": "SqteruGk8UIFCKnP"
+      }
     },
     {
       "_id": "dk7YdOYc1nJUGbVE",
@@ -5165,7 +5906,20 @@
       },
       "type": "armor",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "l80oQsJk6XKHgsXE",
@@ -5230,7 +5984,20 @@
       },
       "type": "armor",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "RJZOO6Ldws4AePVG",
@@ -5295,476 +6062,19 @@
       },
       "type": "armor",
       "folder": null,
-      "sort": 0
-    },
-    {
-      "_id": "4iUUm0jexyM71vWu",
-      "effects": [],
-      "flags": {
-        "cyberpunk-red-core": {
-          "_migration": {
-            "current": 33,
-            "previous": "24"
-          }
-        }
-      },
-      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/skin_weave.svg",
-      "name": "Skin Weave",
-      "system": {
-        "bodyLocation": {
-          "ablation": 0,
-          "sp": 7
-        },
-        "brand": "",
-        "concealable": {
-          "concealable": false,
-          "isConcealed": false
-        },
-        "description": {
-          "value": "<p>Armor Item for Skin Weave Cyberware.</p>"
-        },
-        "equipped": "owned",
-        "favorite": false,
-        "headLocation": {
-          "ablation": 0,
-          "sp": 7
-        },
-        "installedItems": {
-          "allowed": false,
-          "allowedTypes": [
-            "itemUpgrade"
-          ],
-          "list": [],
-          "slots": 0,
-          "usedSlots": 0
-        },
-        "isBodyLocation": true,
-        "isElectronic": false,
-        "isHeadLocation": true,
-        "isShield": false,
-        "penalty": 0,
-        "price": {
-          "market": 0
-        },
-        "providesHardening": false,
-        "revealed": true,
-        "shieldHitPoints": {
-          "max": 0,
-          "value": 0
-        },
-        "source": {
-          "book": "Core",
-          "page": 364
-        },
-        "usage": "toggled"
-      },
-      "type": "armor",
-      "folder": null,
-      "sort": 0
-    },
-    {
-      "_id": "zdlJi8xUhyqYj8us",
-      "effects": [],
-      "flags": {
-        "cyberpunk-red-core": {
-          "_migration": {
-            "current": 33,
-            "previous": "24"
-          }
-        }
-      },
-      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/subdermal_armor.svg",
-      "name": "Subdermal Armor",
-      "system": {
-        "bodyLocation": {
-          "ablation": 0,
-          "sp": 11
-        },
-        "brand": "",
-        "concealable": {
-          "concealable": false,
-          "isConcealed": false
-        },
-        "description": {
-          "value": "<p>Armor Item for Subdermal Armor Cyberware.</p>"
-        },
-        "equipped": "owned",
-        "favorite": false,
-        "headLocation": {
-          "ablation": 0,
-          "sp": 11
-        },
-        "installedItems": {
-          "allowed": false,
-          "allowedTypes": [
-            "itemUpgrade"
-          ],
-          "list": [],
-          "slots": 0,
-          "usedSlots": 0
-        },
-        "isBodyLocation": true,
-        "isElectronic": false,
-        "isHeadLocation": true,
-        "isShield": false,
-        "penalty": 0,
-        "price": {
-          "market": 0
-        },
-        "providesHardening": false,
-        "revealed": true,
-        "shieldHitPoints": {
-          "max": 0,
-          "value": 0
-        },
-        "source": {
-          "book": "Core",
-          "page": 364
-        },
-        "usage": "toggled"
-      },
-      "type": "armor",
-      "folder": null,
-      "sort": 0
-    },
-    {
-      "folder": "7KfY05Nc586aFBh8",
-      "name": "Self-ICE",
-      "type": "cyberware",
-      "_id": "7e44z5xzPfC1LRzE",
-      "img": "systems/cyberpunk-red-core/icons/compendium/default/default-blackice.svg",
-      "system": {
-        "weaponType": "",
-        "weaponSkill": "",
-        "fireModes": {
-          "autoFire": 0,
-          "suppressiveFire": false
-        },
-        "damage": "1d6",
-        "rof": 1,
-        "dvTable": "",
-        "isRanged": false,
-        "unarmedAutomaticCalculation": true,
-        "attackmod": 0,
-        "description": {
-          "value": "<p>Adds a DV6 Passwall to the user's Neuroport to provide defense against Netrunners and Quickhacks. Can be installed multiple times, which improves the difficulty of bypassing to DV8 and DV10 upon a second and third installation. Further installations do nothing.</p><p></p>"
-        },
-        "source": {
-          "book": "CEMK Rules",
-          "page": 36
-        },
-        "favorite": false,
-        "revealed": true,
-        "usage": "toggled",
-        "isElectronic": false,
-        "providesHardening": false,
-        "installLocation": "hospital",
-        "size": 1,
-        "usesType": "magazine",
-        "magazine": {
-          "value": 0,
-          "max": 0,
-          "ammoData": null
-        },
-        "ammoVariety": [],
-        "concealable": {
-          "concealable": false,
-          "isConcealed": false
-        },
-        "brand": "",
-        "price": {
-          "market": 500
-        },
-        "installedItems": {
-          "allowedTypes": [
-            "cyberware",
-            "itemUpgrade"
-          ],
-          "allowed": false,
-          "list": [],
-          "usedSlots": 0,
-          "slots": 0
-        },
-        "type": "neuralWare",
-        "isWeapon": false,
-        "isFoundational": false,
-        "core": false,
-        "humanityLoss": {
-          "static": 3,
-          "roll": "1d6"
-        },
-        "canIgnoreArmor": true,
-        "ignoreArmorPercent": 50,
-        "critFailEffect": "jammed",
-        "ignoreBelowSP": 0
-      },
-      "effects": [],
       "sort": 0,
-      "flags": {
-        "scene-packer": {
-          "hash": "dd2dbdafc4e624d0b2a4e3f0cf6dcb60320ca187"
-        },
-        "cyberpunk-red-core": {
-          "_migration": {
-            "previous": "24",
-            "current": 33
-          }
-        }
-      }
-    },
-    {
-      "folder": "7KfY05Nc586aFBh8",
-      "name": "Self-ICE",
-      "type": "cyberware",
-      "_id": "0ozpVekLXxoXScit",
-      "img": "systems/cyberpunk-red-core/icons/compendium/default/default-blackice.svg",
-      "system": {
-        "weaponType": "",
-        "weaponSkill": "",
-        "fireModes": {
-          "autoFire": 0,
-          "suppressiveFire": false
-        },
-        "damage": "1d6",
-        "rof": 1,
-        "dvTable": "",
-        "isRanged": false,
-        "unarmedAutomaticCalculation": true,
-        "attackmod": 0,
-        "description": {
-          "value": "<p>Adds a DV6 Passwall to the user's Neuroport to provide defense against Netrunners and Quickhacks. Can be installed multiple times, which improves the difficulty of bypassing to DV8 and DV10 upon a second and third installation. Further installations do nothing.</p><p></p>"
-        },
-        "source": {
-          "book": "CEMK Rules",
-          "page": 36
-        },
-        "favorite": false,
-        "revealed": true,
-        "usage": "toggled",
-        "isElectronic": false,
-        "providesHardening": false,
-        "installLocation": "hospital",
-        "size": 1,
-        "usesType": "magazine",
-        "magazine": {
-          "value": 0,
-          "max": 0,
-          "ammoData": null
-        },
-        "ammoVariety": [],
-        "concealable": {
-          "concealable": false,
-          "isConcealed": false
-        },
-        "brand": "",
-        "price": {
-          "market": 500
-        },
-        "installedItems": {
-          "allowedTypes": [
-            "cyberware",
-            "itemUpgrade"
-          ],
-          "allowed": false,
-          "list": [],
-          "usedSlots": 0,
-          "slots": 0
-        },
-        "type": "neuralWare",
-        "isWeapon": false,
-        "isFoundational": false,
-        "core": false,
-        "humanityLoss": {
-          "static": 3,
-          "roll": "1d6"
-        },
-        "canIgnoreArmor": true,
-        "ignoreArmorPercent": 50,
-        "critFailEffect": "jammed",
-        "ignoreBelowSP": 0
+      "ownership": {
+        "default": 0
       },
-      "effects": [],
-      "sort": 0,
-      "flags": {
-        "scene-packer": {
-          "hash": "dd2dbdafc4e624d0b2a4e3f0cf6dcb60320ca187"
-        },
-        "cyberpunk-red-core": {
-          "_migration": {
-            "previous": "24",
-            "current": 33
-          }
-        }
-      }
-    },
-    {
-      "folder": "7KfY05Nc586aFBh8",
-      "name": "Self-ICE",
-      "type": "cyberware",
-      "_id": "UuGl7yZBOkYCTtwI",
-      "img": "systems/cyberpunk-red-core/icons/compendium/default/default-blackice.svg",
-      "system": {
-        "weaponType": "",
-        "weaponSkill": "",
-        "fireModes": {
-          "autoFire": 0,
-          "suppressiveFire": false
-        },
-        "damage": "1d6",
-        "rof": 1,
-        "dvTable": "",
-        "isRanged": false,
-        "unarmedAutomaticCalculation": true,
-        "attackmod": 0,
-        "description": {
-          "value": "<p>Adds a DV6 Passwall to the user's Neuroport to provide defense against Netrunners and Quickhacks. Can be installed multiple times, which improves the difficulty of bypassing to DV8 and DV10 upon a second and third installation. Further installations do nothing.</p><p></p>"
-        },
-        "source": {
-          "book": "CEMK Rules",
-          "page": 36
-        },
-        "favorite": false,
-        "revealed": true,
-        "usage": "toggled",
-        "isElectronic": false,
-        "providesHardening": false,
-        "installLocation": "hospital",
-        "size": 1,
-        "usesType": "magazine",
-        "magazine": {
-          "value": 0,
-          "max": 0,
-          "ammoData": null
-        },
-        "ammoVariety": [],
-        "concealable": {
-          "concealable": false,
-          "isConcealed": false
-        },
-        "brand": "",
-        "price": {
-          "market": 500
-        },
-        "installedItems": {
-          "allowedTypes": [
-            "cyberware",
-            "itemUpgrade"
-          ],
-          "allowed": false,
-          "list": [],
-          "usedSlots": 0,
-          "slots": 0
-        },
-        "type": "neuralWare",
-        "isWeapon": false,
-        "isFoundational": false,
-        "core": false,
-        "humanityLoss": {
-          "static": 3,
-          "roll": "1d6"
-        },
-        "canIgnoreArmor": true,
-        "ignoreArmorPercent": 50,
-        "critFailEffect": "jammed",
-        "ignoreBelowSP": 0
-      },
-      "effects": [],
-      "sort": 0,
-      "flags": {
-        "scene-packer": {
-          "hash": "dd2dbdafc4e624d0b2a4e3f0cf6dcb60320ca187"
-        },
-        "cyberpunk-red-core": {
-          "_migration": {
-            "previous": "24",
-            "current": 33
-          }
-        }
-      }
-    },
-    {
-      "folder": "7KfY05Nc586aFBh8",
-      "name": "Self-ICE",
-      "type": "cyberware",
-      "_id": "StXy3gBu9DaupJvt",
-      "img": "systems/cyberpunk-red-core/icons/compendium/default/default-blackice.svg",
-      "system": {
-        "weaponType": "",
-        "weaponSkill": "",
-        "fireModes": {
-          "autoFire": 0,
-          "suppressiveFire": false
-        },
-        "damage": "1d6",
-        "rof": 1,
-        "dvTable": "",
-        "isRanged": false,
-        "unarmedAutomaticCalculation": true,
-        "attackmod": 0,
-        "description": {
-          "value": "<p>Adds a DV6 Passwall to the user's Neuroport to provide defense against Netrunners and Quickhacks. Can be installed multiple times, which improves the difficulty of bypassing to DV8 and DV10 upon a second and third installation. Further installations do nothing.</p><p></p>"
-        },
-        "source": {
-          "book": "CEMK Rules",
-          "page": 36
-        },
-        "favorite": false,
-        "revealed": true,
-        "usage": "toggled",
-        "isElectronic": false,
-        "providesHardening": false,
-        "installLocation": "hospital",
-        "size": 1,
-        "usesType": "magazine",
-        "magazine": {
-          "value": 0,
-          "max": 0,
-          "ammoData": null
-        },
-        "ammoVariety": [],
-        "concealable": {
-          "concealable": false,
-          "isConcealed": false
-        },
-        "brand": "",
-        "price": {
-          "market": 500
-        },
-        "installedItems": {
-          "allowedTypes": [
-            "cyberware",
-            "itemUpgrade"
-          ],
-          "allowed": false,
-          "list": [],
-          "usedSlots": 0,
-          "slots": 0
-        },
-        "type": "neuralWare",
-        "isWeapon": false,
-        "isFoundational": false,
-        "core": false,
-        "humanityLoss": {
-          "static": 3,
-          "roll": "1d6"
-        },
-        "canIgnoreArmor": true,
-        "ignoreArmorPercent": 50,
-        "critFailEffect": "jammed",
-        "ignoreBelowSP": 0
-      },
-      "effects": [],
-      "sort": 0,
-      "flags": {
-        "scene-packer": {
-          "hash": "dd2dbdafc4e624d0b2a4e3f0cf6dcb60320ca187"
-        },
-        "cyberpunk-red-core": {
-          "_migration": {
-            "previous": "24",
-            "current": 33
-          }
-        }
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
       }
     },
     {
@@ -5779,7 +6089,7 @@
         }
       },
       "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/cyberarm.svg",
-      "name": "Cyberarm",
+      "name": "Cyberarm - Left",
       "system": {
         "ammoVariety": [],
         "attackmod": 0,
@@ -5847,7 +6157,20 @@
       },
       "type": "cyberware",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": 1786931515772,
+        "lastModifiedBy": "SqteruGk8UIFCKnP"
+      }
     },
     {
       "_id": "zjAhz0UssMeYdCr9",
@@ -5928,7 +6251,20 @@
       },
       "type": "cyberware",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "a6hfYLIvYSr4i05v",
@@ -5980,7 +6316,7 @@
             "duplicateSource": null,
             "coreVersion": "12.343",
             "systemId": "cyberpunk-red-core",
-            "systemVersion": "v0.92.1",
+            "systemVersion": "v0.92.4",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null
@@ -6066,7 +6402,20 @@
       },
       "type": "cyberware",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "9h87uaOh9mxO0P5Q",
@@ -6080,7 +6429,7 @@
         }
       },
       "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/cyberarm.svg",
-      "name": "Cyberarm",
+      "name": "Cyberarm - Right",
       "system": {
         "ammoVariety": [],
         "attackmod": 0,
@@ -6148,170 +6497,20 @@
       },
       "type": "cyberware",
       "folder": null,
-      "sort": 0
-    },
-    {
-      "_id": "jAmrd7DP3XvXHcm9",
-      "effects": [],
-      "flags": {
-        "cyberpunk-red-core": {
-          "_migration": {
-            "current": 33,
-            "previous": "24"
-          }
-        }
+      "sort": 0,
+      "ownership": {
+        "default": 0
       },
-      "img": "systems/cyberpunk-red-core/icons/compendium/black-chrome/reflex-co-processor.svg",
-      "name": "Reflex Co-Processor",
-      "system": {
-        "ammoVariety": [],
-        "attackmod": 0,
-        "brand": "",
-        "canIgnoreArmor": true,
-        "concealable": {
-          "concealable": false,
-          "isConcealed": false
-        },
-        "core": false,
-        "damage": "1d6",
-        "description": {
-          "value": "<p>Neuralware.</p>\n<p>Negates REF requirement to dodge bullets.</p>"
-        },
-        "dvTable": "",
-        "favorite": false,
-        "fireModes": {
-          "autoFire": 0,
-          "suppressiveFire": false
-        },
-        "humanityLoss": {
-          "roll": "4d6",
-          "static": 14
-        },
-        "ignoreArmorPercent": 50,
-        "installLocation": "hospital",
-        "installedItems": {
-          "allowed": false,
-          "allowedTypes": [
-            "itemUpgrade",
-            "ammo"
-          ],
-          "list": [],
-          "slots": 3,
-          "usedSlots": 0
-        },
-        "isElectronic": true,
-        "isFoundational": false,
-        "isRanged": false,
-        "isWeapon": false,
-        "magazine": {
-          "ammoData": null,
-          "max": 0,
-          "value": 0
-        },
-        "price": {
-          "market": 500
-        },
-        "providesHardening": false,
-        "revealed": true,
-        "rof": 1,
-        "size": 1,
-        "source": {
-          "book": "BC",
-          "page": 21
-        },
-        "type": "neuralWare",
-        "unarmedAutomaticCalculation": true,
-        "usage": "installed",
-        "usesType": "magazine",
-        "weaponSkill": "Archery",
-        "weaponType": "assaultRifle",
-        "critFailEffect": "jammed",
-        "ignoreBelowSP": 0
-      },
-      "type": "cyberware",
-      "folder": null,
-      "sort": 0
-    },
-    {
-      "_id": "iDmj6PBsrjZF7xSU",
-      "effects": [],
-      "flags": {
-        "cyberpunk-red-core": {
-          "_migration": {
-            "current": 33,
-            "previous": "24"
-          }
-        }
-      },
-      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/subdermal_armor.svg",
-      "name": "Subdermal Armor",
-      "system": {
-        "ammoVariety": [],
-        "attackmod": 0,
-        "brand": "",
-        "canIgnoreArmor": true,
-        "concealable": {
-          "concealable": false,
-          "isConcealed": false
-        },
-        "core": false,
-        "damage": "1d6",
-        "description": {
-          "value": "<p>\n  External Body Cyberware*. Head and Body Armor SP11 and recovers 1SP/day. Armor\n  does not stack.\n</p>\n<p>\n  <em>* Cyberware Armor does not function as armor in the system, please add the\n    \"Subdermal Armor\" item to the character/mook to track</em>\n</p>"
-        },
-        "dvTable": "",
-        "favorite": false,
-        "fireModes": {
-          "autoFire": 0,
-          "suppressiveFire": false
-        },
-        "humanityLoss": {
-          "roll": "4d6",
-          "static": 14
-        },
-        "ignoreArmorPercent": 50,
-        "installLocation": "hospital",
-        "installedItems": {
-          "allowed": false,
-          "allowedTypes": [
-            "itemUpgrade"
-          ],
-          "list": [],
-          "slots": 3,
-          "usedSlots": 0
-        },
-        "isElectronic": true,
-        "isFoundational": false,
-        "isRanged": false,
-        "isWeapon": false,
-        "magazine": {
-          "ammoData": null,
-          "max": 0,
-          "value": 0
-        },
-        "price": {
-          "market": 1000
-        },
-        "providesHardening": false,
-        "revealed": true,
-        "rof": 1,
-        "size": 1,
-        "source": {
-          "book": "Core",
-          "page": 364
-        },
-        "type": "cyberwareExternal",
-        "unarmedAutomaticCalculation": true,
-        "usage": "toggled",
-        "usesType": "magazine",
-        "weaponSkill": "Archery",
-        "weaponType": "assaultRifle",
-        "critFailEffect": "jammed",
-        "ignoreBelowSP": 0
-      },
-      "type": "cyberware",
-      "folder": null,
-      "sort": 0
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": 1786931534030,
+        "lastModifiedBy": "SqteruGk8UIFCKnP"
+      }
     },
     {
       "_id": "1xV7JwLtcvg2YXof",
@@ -6376,169 +6575,20 @@
       },
       "type": "armor",
       "folder": null,
-      "sort": 0
-    },
-    {
-      "_id": "Rd3Y8vdaXyIMfzGK",
-      "effects": [],
-      "flags": {
-        "cyberpunk-red-core": {
-          "_migration": {
-            "current": 33,
-            "previous": "24"
-          }
-        }
+      "sort": 0,
+      "ownership": {
+        "default": 0
       },
-      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/skin_weave.svg",
-      "name": "Skin Weave",
-      "system": {
-        "ammoVariety": [],
-        "attackmod": 0,
-        "brand": "",
-        "canIgnoreArmor": true,
-        "concealable": {
-          "concealable": false,
-          "isConcealed": false
-        },
-        "core": false,
-        "damage": "1d6",
-        "description": {
-          "value": "<p>\n  External Body Cyberware*. Head and Body Armor SP7 and recovers 1SP/day. Armor\n  does not stack.\n</p>\n<p>\n  <em>* Cyberware Armor does not function as armor in the system, please add the\n    \"Skin Weave\" item to the character/mook to track</em>\n</p>"
-        },
-        "dvTable": "",
-        "favorite": false,
-        "fireModes": {
-          "autoFire": 0,
-          "suppressiveFire": false
-        },
-        "humanityLoss": {
-          "roll": "2d6",
-          "static": 7
-        },
-        "ignoreArmorPercent": 50,
-        "installLocation": "hospital",
-        "installedItems": {
-          "allowed": false,
-          "allowedTypes": [
-            "itemUpgrade"
-          ],
-          "list": [],
-          "slots": 3,
-          "usedSlots": 0
-        },
-        "isElectronic": true,
-        "isFoundational": false,
-        "isRanged": false,
-        "isWeapon": false,
-        "magazine": {
-          "ammoData": null,
-          "max": 0,
-          "value": 0
-        },
-        "price": {
-          "market": 500
-        },
-        "providesHardening": false,
-        "revealed": true,
-        "rof": 1,
-        "size": 1,
-        "source": {
-          "book": "Core",
-          "page": 364
-        },
-        "type": "cyberwareExternal",
-        "unarmedAutomaticCalculation": true,
-        "usage": "toggled",
-        "usesType": "magazine",
-        "weaponSkill": "Archery",
-        "weaponType": "assaultRifle",
-        "critFailEffect": "jammed",
-        "ignoreBelowSP": 0
-      },
-      "type": "cyberware",
-      "folder": null,
-      "sort": 0
-    },
-    {
-      "_id": "cn9g9ZfaRfRnQ2Jr",
-      "effects": [],
-      "flags": {
-        "cyberpunk-red-core": {
-          "_migration": {
-            "current": 33,
-            "previous": "24"
-          }
-        }
-      },
-      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/emp_threading.svg",
-      "name": "EMP Threading",
-      "system": {
-        "ammoVariety": [],
-        "attackmod": 0,
-        "brand": "",
-        "canIgnoreArmor": true,
-        "concealable": {
-          "concealable": false,
-          "isConcealed": false
-        },
-        "core": false,
-        "damage": "1d6",
-        "description": {
-          "value": "<p>PCB effect on skin.</p>"
-        },
-        "dvTable": "",
-        "favorite": false,
-        "fireModes": {
-          "autoFire": 0,
-          "suppressiveFire": false
-        },
-        "humanityLoss": {
-          "roll": "0",
-          "static": 0
-        },
-        "ignoreArmorPercent": 50,
-        "installLocation": "mall",
-        "installedItems": {
-          "allowed": false,
-          "allowedTypes": [
-            "itemUpgrade"
-          ],
-          "list": [],
-          "slots": 3,
-          "usedSlots": 0
-        },
-        "isElectronic": true,
-        "isFoundational": false,
-        "isRanged": false,
-        "isWeapon": false,
-        "magazine": {
-          "ammoData": null,
-          "max": 0,
-          "value": 0
-        },
-        "price": {
-          "market": 10
-        },
-        "providesHardening": false,
-        "revealed": true,
-        "rof": 1,
-        "size": 1,
-        "source": {
-          "book": "Core",
-          "page": 358
-        },
-        "type": "fashionware",
-        "unarmedAutomaticCalculation": true,
-        "usage": "toggled",
-        "usesType": "magazine",
-        "weaponSkill": "Archery",
-        "weaponType": "assaultRifle",
-        "critFailEffect": "jammed",
-        "ignoreBelowSP": 0
-      },
-      "type": "cyberware",
-      "folder": null,
-      "sort": 0
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "piibF77db2rV7xAA",
@@ -6555,7 +6605,7 @@
       "name": "Grenade (Armor-Piercing)",
       "system": {
         "ablationValue": 2,
-        "amount": 3,
+        "amount": 1,
         "brand": "",
         "concealable": {
           "concealable": true,
@@ -6591,7 +6641,20 @@
       },
       "type": "ammo",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "qR3HyKYpztedE3hx",
@@ -6672,7 +6735,20 @@
       },
       "type": "cyberware",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "ByMNQ9uS63X1rasd",
@@ -6689,7 +6765,7 @@
       "name": "Grenade (Smoke)",
       "system": {
         "ablationValue": 0,
-        "amount": 3,
+        "amount": 1,
         "brand": "",
         "concealable": {
           "concealable": true,
@@ -6725,7 +6801,20 @@
       },
       "type": "ammo",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
     },
     {
       "_id": "QKH1yJpo55gyOirG",
@@ -6739,7 +6828,7 @@
         }
       },
       "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/cybereye.svg",
-      "name": "Cybereye",
+      "name": "Cybereye - Left",
       "system": {
         "ammoVariety": [],
         "attackmod": 0,
@@ -6807,7 +6896,20 @@
       },
       "type": "cyberware",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": 1786931543476,
+        "lastModifiedBy": "SqteruGk8UIFCKnP"
+      }
     },
     {
       "_id": "fL2tsitVVKw84r3R",
@@ -6821,7 +6923,7 @@
         }
       },
       "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/cybereye.svg",
-      "name": "Cybereye",
+      "name": "Cybereye - Right",
       "system": {
         "ammoVariety": [],
         "attackmod": 0,
@@ -6889,10 +6991,987 @@
       },
       "type": "cyberware",
       "folder": null,
-      "sort": 0
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": 1786931553940,
+        "lastModifiedBy": "SqteruGk8UIFCKnP"
+      }
+    },
+    {
+      "_id": "LZXzIHJSDj5s4uWR",
+      "effects": [],
+      "flags": {
+        "cyberpunk-red-core": {
+          "_migration": {
+            "current": 33,
+            "previous": "24"
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/cyberleg.svg",
+      "name": "Cyberleg - Left",
+      "system": {
+        "ammoVariety": [],
+        "attackmod": 0,
+        "brand": "",
+        "canIgnoreArmor": true,
+        "concealable": {
+          "concealable": false,
+          "isConcealed": false
+        },
+        "core": false,
+        "damage": "1d6",
+        "description": {
+          "value": "<p>A cybernetical replacement leg. Comes with a free foot.</p>"
+        },
+        "dvTable": "",
+        "favorite": false,
+        "fireModes": {
+          "autoFire": 0,
+          "suppressiveFire": false
+        },
+        "humanityLoss": {
+          "roll": "1d6",
+          "static": 3
+        },
+        "ignoreArmorPercent": 50,
+        "installLocation": "hospital",
+        "installedItems": {
+          "allowed": true,
+          "allowedTypes": [
+            "itemUpgrade",
+            "cyberware"
+          ],
+          "list": [],
+          "slots": 3,
+          "usedSlots": 0
+        },
+        "isElectronic": true,
+        "isFoundational": true,
+        "isRanged": false,
+        "isWeapon": false,
+        "magazine": {
+          "ammoData": null,
+          "max": 0,
+          "value": 0
+        },
+        "price": {
+          "market": 100
+        },
+        "providesHardening": false,
+        "revealed": true,
+        "rof": 1,
+        "size": 0,
+        "source": {
+          "book": "Core",
+          "page": 366
+        },
+        "type": "cyberLeg",
+        "unarmedAutomaticCalculation": true,
+        "usage": "toggled",
+        "usesType": "magazine",
+        "weaponSkill": "Archery",
+        "weaponType": "assaultRifle",
+        "critFailEffect": "jammed",
+        "ignoreBelowSP": 0
+      },
+      "type": "cyberware",
+      "_stats": {
+        "compendiumSource": "Compendium.cyberpunk-red-core.core_cyberware.Item.APmOX0zOhga6Z1e6",
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": 1786931563508,
+        "lastModifiedBy": "SqteruGk8UIFCKnP"
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "SqteruGk8UIFCKnP": 3
+      }
+    },
+    {
+      "_id": "FwVqwADKnLzN3NS3",
+      "effects": [],
+      "flags": {
+        "cyberpunk-red-core": {
+          "_migration": {
+            "current": 33,
+            "previous": "24"
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/cyberleg.svg",
+      "name": "Cyberleg - Right",
+      "system": {
+        "ammoVariety": [],
+        "attackmod": 0,
+        "brand": "",
+        "canIgnoreArmor": true,
+        "concealable": {
+          "concealable": false,
+          "isConcealed": false
+        },
+        "core": false,
+        "damage": "1d6",
+        "description": {
+          "value": "<p>A cybernetical replacement leg. Comes with a free foot.</p>"
+        },
+        "dvTable": "",
+        "favorite": false,
+        "fireModes": {
+          "autoFire": 0,
+          "suppressiveFire": false
+        },
+        "humanityLoss": {
+          "roll": "1d6",
+          "static": 3
+        },
+        "ignoreArmorPercent": 50,
+        "installLocation": "hospital",
+        "installedItems": {
+          "allowed": true,
+          "allowedTypes": [
+            "itemUpgrade",
+            "cyberware"
+          ],
+          "list": [],
+          "slots": 3,
+          "usedSlots": 0
+        },
+        "isElectronic": true,
+        "isFoundational": true,
+        "isRanged": false,
+        "isWeapon": false,
+        "magazine": {
+          "ammoData": null,
+          "max": 0,
+          "value": 0
+        },
+        "price": {
+          "market": 100
+        },
+        "providesHardening": false,
+        "revealed": true,
+        "rof": 1,
+        "size": 0,
+        "source": {
+          "book": "Core",
+          "page": 366
+        },
+        "type": "cyberLeg",
+        "unarmedAutomaticCalculation": true,
+        "usage": "toggled",
+        "usesType": "magazine",
+        "weaponSkill": "Archery",
+        "weaponType": "assaultRifle",
+        "critFailEffect": "jammed",
+        "ignoreBelowSP": 0
+      },
+      "type": "cyberware",
+      "_stats": {
+        "compendiumSource": "Compendium.cyberpunk-red-core.core_cyberware.Item.APmOX0zOhga6Z1e6",
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": 1786931571089,
+        "lastModifiedBy": "SqteruGk8UIFCKnP"
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "SqteruGk8UIFCKnP": 3
+      }
+    },
+    {
+      "_id": "qQXO9ZJgeecPOOAX",
+      "effects": [],
+      "flags": {
+        "cyberpunk-red-core": {
+          "_migration": {
+            "current": 33,
+            "previous": "24"
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/lowlight_ir_uv.svg",
+      "name": "Low Light/IR/UV",
+      "system": {
+        "ammoVariety": [],
+        "attackmod": 0,
+        "brand": "",
+        "canIgnoreArmor": true,
+        "concealable": {
+          "concealable": false,
+          "isConcealed": false
+        },
+        "core": false,
+        "damage": "1d6",
+        "description": {
+          "value": "<p>Must be paired. Ignore any vision penalties due to lighting or fog/smoke.</p>"
+        },
+        "dvTable": "",
+        "favorite": false,
+        "fireModes": {
+          "autoFire": 0,
+          "suppressiveFire": false
+        },
+        "humanityLoss": {
+          "roll": "1d6",
+          "static": 3
+        },
+        "ignoreArmorPercent": 50,
+        "installLocation": "mall",
+        "installedItems": {
+          "allowed": false,
+          "allowedTypes": [
+            "itemUpgrade"
+          ],
+          "list": [],
+          "slots": 3,
+          "usedSlots": 0
+        },
+        "isElectronic": true,
+        "isFoundational": false,
+        "isRanged": false,
+        "isWeapon": false,
+        "magazine": {
+          "ammoData": null,
+          "max": 0,
+          "value": 0
+        },
+        "price": {
+          "market": 500
+        },
+        "providesHardening": false,
+        "revealed": true,
+        "rof": 1,
+        "size": 2,
+        "source": {
+          "book": "Core",
+          "page": 360
+        },
+        "type": "cyberEye",
+        "unarmedAutomaticCalculation": true,
+        "usage": "toggled",
+        "usesType": "magazine",
+        "weaponSkill": "Archery",
+        "weaponType": "assaultRifle",
+        "critFailEffect": "jammed",
+        "ignoreBelowSP": 0
+      },
+      "type": "cyberware",
+      "_stats": {
+        "compendiumSource": "Compendium.cyberpunk-red-core.core_cyberware.Item.Iqa0DXFWJji0JRHl",
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "SqteruGk8UIFCKnP": 3
+      }
+    },
+    {
+      "_id": "iwcYQCQtKxctyubh",
+      "effects": [],
+      "flags": {
+        "cyberpunk-red-core": {
+          "_migration": {
+            "current": 33,
+            "previous": "24"
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/subdermal_grip.svg",
+      "name": "Subdermal Grip",
+      "system": {
+        "ammoVariety": [],
+        "attackmod": 0,
+        "brand": "",
+        "canIgnoreArmor": true,
+        "concealable": {
+          "concealable": false,
+          "isConcealed": false
+        },
+        "core": false,
+        "damage": "1d6",
+        "description": {
+          "value": "<p>\n  Plating on your hand which allows you to utilise Smartguns. Requires a neural\n  link.\n</p>"
+        },
+        "dvTable": "",
+        "favorite": false,
+        "fireModes": {
+          "autoFire": 0,
+          "suppressiveFire": false
+        },
+        "humanityLoss": {
+          "roll": "1d6",
+          "static": 3
+        },
+        "ignoreArmorPercent": 50,
+        "installLocation": "clinic",
+        "installedItems": {
+          "allowed": false,
+          "allowedTypes": [
+            "itemUpgrade"
+          ],
+          "list": [],
+          "slots": 3,
+          "usedSlots": 0
+        },
+        "isElectronic": true,
+        "isFoundational": false,
+        "isRanged": false,
+        "isWeapon": false,
+        "magazine": {
+          "ammoData": null,
+          "max": 0,
+          "value": 0
+        },
+        "price": {
+          "market": 100
+        },
+        "providesHardening": false,
+        "revealed": true,
+        "rof": 1,
+        "size": 1,
+        "source": {
+          "book": "Core",
+          "page": 366
+        },
+        "type": "cyberArm",
+        "unarmedAutomaticCalculation": true,
+        "usage": "toggled",
+        "usesType": "magazine",
+        "weaponSkill": "Archery",
+        "weaponType": "assaultRifle",
+        "critFailEffect": "jammed",
+        "ignoreBelowSP": 0
+      },
+      "type": "cyberware",
+      "_stats": {
+        "compendiumSource": "Compendium.cyberpunk-red-core.core_cyberware.Item.2vSTximwCOxNPGJX",
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "SqteruGk8UIFCKnP": 3
+      }
+    },
+    {
+      "_id": "Bhu6nIviy3ElqWod",
+      "effects": [
+        {
+          "_id": "pZWEbI2ZttpRsUPj",
+          "changes": [
+            {
+              "key": "bonuses.aimedShot",
+              "mode": 2,
+              "priority": null,
+              "value": "1"
+            }
+          ],
+          "description": "",
+          "disabled": false,
+          "duration": {
+            "combat": null,
+            "rounds": null,
+            "seconds": null,
+            "startRound": null,
+            "startTime": 3410467327,
+            "startTurn": null,
+            "turns": null
+          },
+          "flags": {
+            "cyberpunk-red-core": {
+              "changes": {
+                "cats": {
+                  "0": "combat"
+                },
+                "situational": {
+                  "0": {
+                    "isSituational": false,
+                    "onByDefault": false
+                  }
+                }
+              }
+            }
+          },
+          "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/targeting_scope.svg",
+          "name": "Targeting Scope",
+          "statuses": [],
+          "system": {},
+          "transfer": true,
+          "type": "base",
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "12.343",
+            "systemId": "cyberpunk-red-core",
+            "systemVersion": "v0.92.4",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null
+          },
+          "origin": null,
+          "tint": "#ffffff",
+          "sort": 0
+        }
+      ],
+      "flags": {
+        "cyberpunk-red-core": {
+          "_migration": {
+            "current": 33,
+            "previous": "24"
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/cyberware/targeting_scope.svg",
+      "name": "Targeting Scope",
+      "system": {
+        "ammoVariety": [],
+        "attackmod": 0,
+        "brand": "",
+        "canIgnoreArmor": true,
+        "concealable": {
+          "concealable": false,
+          "isConcealed": false
+        },
+        "core": false,
+        "damage": "1d6",
+        "description": {
+          "value": "<p>Provides a +1 to aimed shots.</p>"
+        },
+        "dvTable": "",
+        "favorite": false,
+        "fireModes": {
+          "autoFire": 0,
+          "suppressiveFire": false
+        },
+        "humanityLoss": {
+          "roll": "1d6",
+          "static": 3
+        },
+        "ignoreArmorPercent": 50,
+        "installLocation": "clinic",
+        "installedItems": {
+          "allowed": false,
+          "allowedTypes": [
+            "itemUpgrade"
+          ],
+          "list": [],
+          "slots": 3,
+          "usedSlots": 0
+        },
+        "isElectronic": true,
+        "isFoundational": false,
+        "isRanged": false,
+        "isWeapon": false,
+        "magazine": {
+          "ammoData": null,
+          "max": 0,
+          "value": 0
+        },
+        "price": {
+          "market": 500
+        },
+        "providesHardening": false,
+        "revealed": true,
+        "rof": 1,
+        "size": 1,
+        "source": {
+          "book": "Core",
+          "page": 361
+        },
+        "type": "cyberEye",
+        "unarmedAutomaticCalculation": true,
+        "usage": "installed",
+        "usesType": "magazine",
+        "weaponSkill": "Archery",
+        "weaponType": "assaultRifle",
+        "critFailEffect": "jammed",
+        "ignoreBelowSP": 0
+      },
+      "type": "cyberware",
+      "_stats": {
+        "compendiumSource": "Compendium.cyberpunk-red-core.core_cyberware.Item.wFp72x2FXhipZXPj",
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "SqteruGk8UIFCKnP": 3
+      }
+    },
+    {
+      "_id": "5FFPrl9AOT0dI8rc",
+      "effects": [],
+      "flags": {
+        "cyberpunk-red-core": {
+          "_migration": {
+            "current": 33,
+            "previous": "24"
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/weapons/BaseballBat_excellent.svg",
+      "name": "Very Heavy Melee (Excellent)",
+      "system": {
+        "ammoVariety": [],
+        "attackmod": 1,
+        "brand": "",
+        "canIgnoreArmor": true,
+        "concealable": {
+          "concealable": false,
+          "isConcealed": false
+        },
+        "critFailEffect": "jammed",
+        "damage": "4d6",
+        "description": {
+          "value": "<p>Generic Excellent Quality Very Heavy Melee Weapon.</p>\n<p>+1 to Attack.</p>"
+        },
+        "dvTable": "",
+        "equipped": "owned",
+        "favorite": false,
+        "fireModes": {
+          "autoFire": 0,
+          "suppressiveFire": false
+        },
+        "handsReq": 1,
+        "ignoreArmorPercent": 50,
+        "ignoreBelowSP": 0,
+        "installedItems": {
+          "allowed": false,
+          "allowedTypes": [
+            "itemUpgrade"
+          ],
+          "list": [],
+          "slots": 0,
+          "usedSlots": 0
+        },
+        "isRanged": false,
+        "magazine": {
+          "ammoData": null,
+          "max": 0,
+          "value": 0
+        },
+        "price": {
+          "market": 1000
+        },
+        "quality": "excellent",
+        "revealed": true,
+        "rof": 1,
+        "source": {
+          "book": "Core",
+          "page": 92
+        },
+        "unarmedAutomaticCalculation": true,
+        "usage": "equipped",
+        "usesType": "magazine",
+        "weaponSkill": "Melee Weapon",
+        "weaponType": "vHeavyMelee"
+      },
+      "type": "weapon",
+      "_stats": {
+        "compendiumSource": "Compendium.cyberpunk-red-core.core_weapons.Item.7PzmirTyjLFyCUcs",
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "SqteruGk8UIFCKnP": 3
+      }
+    },
+    {
+      "_id": "9vslObl4XLbOWDGm",
+      "effects": [],
+      "flags": {
+        "cyberpunk-red-core": {
+          "_migration": {
+            "current": 33,
+            "previous": "24"
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/weapons/BaseballBat_excellent.svg",
+      "name": "Light Melee (Excellent)",
+      "system": {
+        "ammoVariety": [],
+        "attackmod": 1,
+        "brand": "",
+        "canIgnoreArmor": true,
+        "concealable": {
+          "concealable": true,
+          "isConcealed": false
+        },
+        "critFailEffect": "jammed",
+        "damage": "1d6",
+        "description": {
+          "value": "<p>Generic Excellent Qulaity Light Melee weapon.</p>\n<p>+1 to Attack.</p>"
+        },
+        "dvTable": "",
+        "equipped": "owned",
+        "favorite": false,
+        "fireModes": {
+          "autoFire": 0,
+          "suppressiveFire": false
+        },
+        "handsReq": 1,
+        "ignoreArmorPercent": 50,
+        "ignoreBelowSP": 0,
+        "installedItems": {
+          "allowed": false,
+          "allowedTypes": [
+            "itemUpgrade"
+          ],
+          "list": [],
+          "slots": 0,
+          "usedSlots": 0
+        },
+        "isRanged": false,
+        "magazine": {
+          "ammoData": null,
+          "max": 0,
+          "value": 0
+        },
+        "price": {
+          "market": 100
+        },
+        "quality": "excellent",
+        "revealed": true,
+        "rof": 2,
+        "source": {
+          "book": "Core",
+          "page": 92
+        },
+        "unarmedAutomaticCalculation": true,
+        "usage": "equipped",
+        "usesType": "magazine",
+        "weaponSkill": "Melee Weapon",
+        "weaponType": "lightMelee"
+      },
+      "type": "weapon",
+      "_stats": {
+        "compendiumSource": "Compendium.cyberpunk-red-core.core_weapons.Item.TQvsBbPEBc13SdVC",
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "SqteruGk8UIFCKnP": 3
+      }
+    },
+    {
+      "_id": "1JZxb8QYZAIYXoqS",
+      "effects": [],
+      "flags": {
+        "cyberpunk-red-core": {
+          "_migration": {
+            "current": 33,
+            "previous": "24"
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/weapons/BaseballBat_excellent.svg",
+      "name": "Heavy Melee (Excellent)",
+      "system": {
+        "ammoVariety": [],
+        "attackmod": 1,
+        "brand": "",
+        "canIgnoreArmor": true,
+        "concealable": {
+          "concealable": false,
+          "isConcealed": false
+        },
+        "critFailEffect": "jammed",
+        "damage": "3d6",
+        "description": {
+          "value": "<p>Generic Excellent Quality Heavy Melee Weapon.</p>\n<p>+1 to Attack.</p>"
+        },
+        "dvTable": "",
+        "equipped": "owned",
+        "favorite": false,
+        "fireModes": {
+          "autoFire": 0,
+          "suppressiveFire": false
+        },
+        "handsReq": 1,
+        "ignoreArmorPercent": 50,
+        "ignoreBelowSP": 0,
+        "installedItems": {
+          "allowed": false,
+          "allowedTypes": [
+            "itemUpgrade"
+          ],
+          "list": [],
+          "slots": 0,
+          "usedSlots": 0
+        },
+        "isRanged": false,
+        "magazine": {
+          "ammoData": null,
+          "max": 0,
+          "value": 0
+        },
+        "price": {
+          "market": 500
+        },
+        "quality": "excellent",
+        "revealed": true,
+        "rof": 2,
+        "source": {
+          "book": "Core",
+          "page": 92
+        },
+        "unarmedAutomaticCalculation": true,
+        "usage": "equipped",
+        "usesType": "magazine",
+        "weaponSkill": "Melee Weapon",
+        "weaponType": "heavyMelee"
+      },
+      "type": "weapon",
+      "_stats": {
+        "compendiumSource": "Compendium.cyberpunk-red-core.core_weapons.Item.lkynJgL5MTDuHwPq",
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "SqteruGk8UIFCKnP": 3
+      }
+    },
+    {
+      "_id": "S6l0H0qIKWVrm2e0",
+      "effects": [],
+      "flags": {
+        "cyberpunk-red-core": {
+          "_migration": {
+            "current": 33,
+            "previous": "24"
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/weapons/Sword_excellent.svg",
+      "name": "Sword (Excellent)",
+      "system": {
+        "ammoVariety": [],
+        "attackmod": 1,
+        "brand": "",
+        "canIgnoreArmor": true,
+        "concealable": {
+          "concealable": false,
+          "isConcealed": false
+        },
+        "critFailEffect": "jammed",
+        "damage": "3d6",
+        "description": {
+          "value": "<p>\n  A bladed, hilted weapon. Specifically designed for cutting or thrusting. +1 to\n  Attack.\n</p>"
+        },
+        "dvTable": "",
+        "equipped": "owned",
+        "favorite": false,
+        "fireModes": {
+          "autoFire": 0,
+          "suppressiveFire": false
+        },
+        "handsReq": 2,
+        "ignoreArmorPercent": 50,
+        "ignoreBelowSP": 0,
+        "installedItems": {
+          "allowed": false,
+          "allowedTypes": [
+            "itemUpgrade"
+          ],
+          "list": [],
+          "slots": 0,
+          "usedSlots": 0
+        },
+        "isRanged": false,
+        "magazine": {
+          "ammoData": null,
+          "max": 0,
+          "value": 0
+        },
+        "price": {
+          "market": 500
+        },
+        "quality": "excellent",
+        "revealed": true,
+        "rof": 2,
+        "source": {
+          "book": "Core",
+          "page": 340
+        },
+        "unarmedAutomaticCalculation": true,
+        "usage": "equipped",
+        "usesType": "magazine",
+        "weaponSkill": "Melee Weapon",
+        "weaponType": "heavyMelee"
+      },
+      "type": "weapon",
+      "_stats": {
+        "compendiumSource": "Compendium.cyberpunk-red-core.core_weapons.Item.G2ZYyZdkjDlerJSM",
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "SqteruGk8UIFCKnP": 3
+      }
+    },
+    {
+      "_id": "SvuqmEch5TK0DOOq",
+      "effects": [],
+      "flags": {
+        "cyberpunk-red-core": {
+          "_migration": {
+            "current": 33,
+            "previous": "24"
+          }
+        }
+      },
+      "img": "systems/cyberpunk-red-core/icons/compendium/weapons/BaseballBat_excellent.svg",
+      "name": "Medium Melee (Excellent)",
+      "system": {
+        "ammoVariety": [],
+        "attackmod": 1,
+        "brand": "",
+        "canIgnoreArmor": true,
+        "concealable": {
+          "concealable": false,
+          "isConcealed": false
+        },
+        "critFailEffect": "jammed",
+        "damage": "2d6",
+        "description": {
+          "value": "<p>Generic Excellent Quality Medium Melee Weapon.</p>\n<p>+1 to Attack.</p>"
+        },
+        "dvTable": "",
+        "equipped": "owned",
+        "favorite": false,
+        "fireModes": {
+          "autoFire": 0,
+          "suppressiveFire": false
+        },
+        "handsReq": 1,
+        "ignoreArmorPercent": 50,
+        "ignoreBelowSP": 0,
+        "installedItems": {
+          "allowed": false,
+          "allowedTypes": [
+            "itemUpgrade"
+          ],
+          "list": [],
+          "slots": 0,
+          "usedSlots": 0
+        },
+        "isRanged": false,
+        "magazine": {
+          "ammoData": null,
+          "max": 0,
+          "value": 0
+        },
+        "price": {
+          "market": 100
+        },
+        "quality": "excellent",
+        "revealed": true,
+        "rof": 2,
+        "source": {
+          "book": "Core",
+          "page": 92
+        },
+        "unarmedAutomaticCalculation": true,
+        "usage": "equipped",
+        "usesType": "magazine",
+        "weaponSkill": "Melee Weapon",
+        "weaponType": "medMelee"
+      },
+      "type": "weapon",
+      "_stats": {
+        "compendiumSource": "Compendium.cyberpunk-red-core.core_weapons.Item.grEw5oU6WDsqAOvY",
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "cyberpunk-red-core",
+        "systemVersion": "v0.92.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "SqteruGk8UIFCKnP": 3
+      }
     }
   ],
-  "img": "pchassets/Art/NPC-Enemies/Mook/Mook10.webp",
+  "img": "modules/pneuma-mook-maker/assets/actor/default-mook.png",
   "system": {
     "stats": {
       "int": {
@@ -6930,9 +8009,9 @@
     },
     "externalData": {
       "currentArmorBody": {
-        "id": "1AQfzSUyCx4xerXg",
-        "value": 11,
-        "max": 11
+        "id": null,
+        "value": 0,
+        "max": 0
       },
       "currentArmorHead": {
         "id": null,
@@ -6997,8 +8076,7 @@
       "list": [
         "XbzKuLk7ld3x4gtJ",
         "eRPAdJcDPxkfWvZO",
-        "v2ak1CreEwY7x5C4",
-        "9YGd9I2dba0T0Aun"
+        "v2ak1CreEwY7x5C4"
       ]
     },
     "wealth": {
@@ -7058,6 +8136,16 @@
         "previous": "37",
         "current": 38
       }
+    },
+    "pneuma-mook-maker": {
+      "IsDefaultMookTemplate": true,
+      "DefaultMookTemplateVersion": 4
+    },
+    "exportSource": {
+      "world": "cp-test",
+      "system": "cyberpunk-red-core",
+      "coreVersion": "12.343",
+      "systemVersion": "v0.92.4"
     }
   }
 }

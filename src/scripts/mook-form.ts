@@ -1,9 +1,10 @@
 import { getArmorUpdates, getCurrentArmorSelections } from "./armor.js";
-import { applyMookChanges, ROLE_NAMES } from "./apply-mook.js";
+import { applyMookChanges } from "./apply-mook.js";
 import { getAdjustedSkillTarget, getSkillUpdates, type SkillTargets } from "./skills.js";
 import { getStatsForHitPoints } from "./stats.js";
 import { confirmPurgeGear } from "./purge.js";
 import { confirmPromotion } from "./promotion.js";
+import { getAvailableSystemRoles, type AvailableRole } from "./roles.js";
 
 function escapeHtml(value: string): string {
   return value.replace(
@@ -47,10 +48,6 @@ function getSkillAdjustmentOptions(name: string): string {
           <input type="radio" name="${name}" value="unchanged" checked>
           <span>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.Unchanged")}</span>
         </label>
-        <label class="pneuma-mook-maker-radio">
-          <input type="radio" name="${name}" value="minus-2">
-          <span>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.CombatNumMinusTwo")}</span>
-        </label>
         <label class="pneuma-mook-maker-radio pneuma-mook-maker-minus-custom">
           <input type="radio" name="${name}" value="minus-custom">
           <span>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.CombatNumberMinus")}</span>
@@ -61,7 +58,7 @@ function getSkillAdjustmentOptions(name: string): string {
     </div>`;
 }
 
-function getMookMakerForm(token: Token): string {
+function getMookMakerForm(token: Token, availableRoles: AvailableRole[]): string {
   const name = escapeHtml(token.document.name ?? token.actor?.name ?? "");
   const customCombatChoice = `
     <label class="pneuma-mook-maker-radio pneuma-mook-maker-custom-choice">
@@ -93,9 +90,13 @@ function getMookMakerForm(token: Token): string {
   const activeRole = String(
     foundry.utils.getProperty(actor, "system.roleInfo.activeRole") ?? "",
   );
-  const activeRoleKey = Object.entries(ROLE_NAMES).find(
-    ([, roleName]) => roleName.toLowerCase() === activeRole.toLowerCase(),
-  )?.[0] ?? "none";
+  const activeRoleKey = availableRoles.find(
+    (role) => role.name.toLocaleLowerCase() === activeRole.toLocaleLowerCase(),
+  )?.key ?? "none";
+  const roleOptions = availableRoles.map(
+    (role) =>
+      `<option value="${escapeHtml(role.key)}"${activeRoleKey === role.key ? " selected" : ""}>${escapeHtml(role.name)}</option>`,
+  ).join("");
   const activeRoleItem = actorDocument?.items.find(
     (item) => String(item.type) === "role" && item.name === activeRole,
   );
@@ -124,9 +125,7 @@ function getMookMakerForm(token: Token): string {
           <span>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.Role")}</span>
           <select id="pneuma-mook-maker-role" name="role">
             <option value="none"${activeRoleKey === "none" ? " selected" : ""}>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.None")}</option>
-            <option value="solo"${activeRoleKey === "solo" ? " selected" : ""}>SOLO</option>
-            <option value="nomad"${activeRoleKey === "nomad" ? " selected" : ""}>Nomad</option>
-            <option value="netrunner"${activeRoleKey === "netrunner" ? " selected" : ""}>Netrunner</option>
+            ${roleOptions}
           </select>
         </label>
         <label class="pneuma-mook-maker-level" for="pneuma-mook-maker-level">
@@ -178,6 +177,10 @@ function getMookMakerForm(token: Token): string {
           <legend>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.HeadArmor")}</legend>
           ${getRadioChoices("headArmor", armorChoices, armorSelections.head, "pneuma-mook-maker-radio-column")}
         </fieldset>
+        <p class="pneuma-mook-maker-armor-note">
+          <i class="fas fa-circle-info"></i>
+          ${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.ArmorInventoryNote")}
+        </p>
       </div>
       <div class="pneuma-mook-maker-form-actions">
         <button type="button" data-action="apply">
@@ -203,14 +206,22 @@ function getMookMakerForm(token: Token): string {
     </form>`;
 }
 
-export function showMookMakerMenu(token: Token): void {
+export async function showMookMakerMenu(token: Token): Promise<void> {
   const actorName = token.actor?.name ?? token.document.name;
   const initialName = token.document.name ?? token.actor?.name ?? "";
+  let availableRoles: AvailableRole[];
+  try {
+    availableRoles = await getAvailableSystemRoles();
+  } catch (error) {
+    console.error("pneuma-mook-maker | Failed to discover Cyberpunk RED roles", error);
+    ui.notifications?.error("MookMaker could not load roles from the Cyberpunk RED system.");
+    return;
+  }
 
   const dialog = new Dialog(
     {
       title: game.i18n!.format("PNEUMA_MOOK_MAKER.Menu.Title", { name: actorName }),
-      content: getMookMakerForm(token),
+      content: getMookMakerForm(token, availableRoles),
       buttons: {},
       render: (html) => {
       const customNumber = html.find<HTMLInputElement>(
@@ -307,7 +318,8 @@ export function showMookMakerMenu(token: Token): void {
         const roleSelection = String(
           html.find<HTMLSelectElement>('select[name="role"]').val() ?? "none",
         );
-        const roleName = ROLE_NAMES[roleSelection] ?? "";
+        const selectedRole = availableRoles.find((role) => role.key === roleSelection);
+        const roleName = selectedRole?.name ?? "";
         const roleLevelText = String(
           html.find<HTMLInputElement>('input[name="level"]').val() ?? "",
         );
@@ -427,6 +439,7 @@ export function showMookMakerMenu(token: Token): void {
             hitPointStats,
             roleName,
             roleLevel,
+            roleSource: selectedRole?.source,
             armorUpdates: armorResult.updates,
             skillUpdates,
           });

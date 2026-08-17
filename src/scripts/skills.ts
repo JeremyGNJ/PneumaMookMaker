@@ -34,7 +34,6 @@ export function getAdjustedSkillTarget(
   combatNumber: number,
 ): number | null {
   if (selection === "unchanged") return null;
-  if (selection === "minus-2") return combatNumber - 2;
   if (selection === "minus-custom" && /^\d$/.test(customAmount)) {
     return combatNumber - Number(customAmount);
   }
