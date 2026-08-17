@@ -1,0 +1,48 @@
+name: Publish Foundry Module Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out tagged source
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build and validate
+        run: |
+          pnpm run build
+          node scripts/validate-manifest.mjs
+
+      - name: Package Foundry module
+        run: (cd dist && zip -r ../pneuma-mook-maker.zip .)
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" \
+            dist/module.json \
+            pneuma-mook-maker.zip \
+            --title "Pneuma Mook Maker ${GITHUB_REF_NAME}" \
+            --generate-notes
