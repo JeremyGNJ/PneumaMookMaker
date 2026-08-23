@@ -1,5 +1,9 @@
 import { MODULE_ID } from "./constants.js";
-import { isPurgeConfirmationEnabled } from "./skill-settings.js";
+import {
+  isPurgeAmmunitionEnabled,
+  isPurgeConfirmationEnabled,
+  isRetainWeaponAmmunitionEnabled,
+} from "./skill-settings.js";
 
 const PURGEABLE_GEAR_TYPES = new Set([
   "armor", "clothing", "cyberware", "drug", "gear", "itemUpgrade", "weapon",
@@ -11,8 +15,61 @@ function isProtectedNaturalWeapon(item: Item): boolean {
   return name.includes("unarmed") || name.includes("martial arts");
 }
 
+function getAmmoSignature(item: Item): string {
+  const variety = String(
+    foundry.utils.getProperty(item, "system.variety") ?? "",
+  ).toLocaleLowerCase();
+  const type = String(
+    foundry.utils.getProperty(item, "system.type") ?? "",
+  ).toLocaleLowerCase();
+  return variety || type
+    ? `${variety}:${type}`
+    : `name:${(item.name ?? "").trim().toLocaleLowerCase()}`;
+}
+
+function getRetainedAmmoSignatures(actor: Actor): Set<string> {
+  const signatures = new Set<string>();
+  if (!isRetainWeaponAmmunitionEnabled()) return signatures;
+
+  const ammoByReference = new Map<string, Item>();
+  for (const item of actor.items) {
+    if (String(item.type) !== "ammo") continue;
+    if (item.id) ammoByReference.set(item.id, item);
+    ammoByReference.set(item.uuid, item);
+  }
+
+  for (const weapon of actor.items) {
+    if (String(weapon.type) !== "weapon") continue;
+    const state = String(
+      foundry.utils.getProperty(weapon, "system.equipped") ?? "",
+    ).toLocaleLowerCase();
+    if (state !== "equipped" && state !== "carried") continue;
+
+    const ammoDataReference = String(
+      foundry.utils.getProperty(weapon, "system.magazine.ammoData.uuid") ?? "",
+    );
+    let ammo = ammoByReference.get(ammoDataReference);
+    if (!ammo) {
+      const installedItems = foundry.utils.getProperty(
+        weapon,
+        "system.installedItems.list",
+      );
+      if (Array.isArray(installedItems)) {
+        ammo = installedItems
+          .filter((reference): reference is string => typeof reference === "string")
+          .map((reference) => ammoByReference.get(reference))
+          .find((item): item is Item => Boolean(item));
+      }
+    }
+    if (ammo) signatures.add(getAmmoSignature(ammo));
+  }
+  return signatures;
+}
+
 function getPurgeableGear(actor: Actor): Item[] {
   const protectedIds = new Set<string>();
+  const purgeAmmunition = isPurgeAmmunitionEnabled();
+  const retainedAmmoSignatures = getRetainedAmmoSignatures(actor);
   const childrenByParent = new Map<string, string[]>();
   const itemTypesById = new Map(
     Array.from(actor.items).flatMap((item) =>
@@ -72,7 +129,11 @@ function getPurgeableGear(actor: Actor): Item[] {
   }
 
   return Array.from(actor.items).filter((item) => {
-    if (!item.id || !PURGEABLE_GEAR_TYPES.has(String(item.type))) return false;
+    if (!item.id) return false;
+    if (String(item.type) === "ammo") {
+      return purgeAmmunition && !retainedAmmoSignatures.has(getAmmoSignature(item));
+    }
+    if (!PURGEABLE_GEAR_TYPES.has(String(item.type))) return false;
     if (isProtectedNaturalWeapon(item)) return false;
     if (protectedIds.has(item.id)) return false;
     const state = String(
@@ -156,34 +217,37 @@ async function purgeGear(token: Token): Promise<boolean> {
   }
 }
 
-export function confirmPurgeGear(token: Token): void {
+export async function confirmPurgeGear(token: Token): Promise<boolean> {
   const actor = token.actor;
-  if (!actor) return;
+  if (!actor) return false;
   const count = getPurgeableGear(actor).length;
   if (count === 0) {
     ui.notifications?.info(
       game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.NothingToPurge"),
     );
-    return;
+    return false;
   }
-  if (!isPurgeConfirmationEnabled()) {
-    void purgeGear(token);
-    return;
+  if (isPurgeConfirmationEnabled()) {
+    return new Promise<boolean>((resolve) => {
+      new Dialog({
+        title: game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.PurgeConfirmTitle"),
+        content: `<p>${game.i18n!.format("PNEUMA_MOOK_MAKER.Form.PurgeWarning", { count })}</p>`,
+        buttons: {
+          confirm: {
+            icon: '<i class="fas fa-trash"></i>',
+            label: game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.PurgeGear"),
+            callback: async () => { resolve(await purgeGear(token)); },
+          },
+          cancel: {
+            icon: '<i class="fas fa-times"></i>',
+            label: game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.Cancel"),
+            callback: () => resolve(false),
+          },
+        },
+        default: "cancel",
+        close: () => resolve(false),
+      }).render(true);
+    });
   }
-  new Dialog({
-    title: game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.PurgeConfirmTitle"),
-    content: `<p>${game.i18n!.format("PNEUMA_MOOK_MAKER.Form.PurgeWarning", { count })}</p>`,
-    buttons: {
-      confirm: {
-        icon: '<i class="fas fa-trash"></i>',
-        label: game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.PurgeGear"),
-        callback: async () => { await purgeGear(token); },
-      },
-      cancel: {
-        icon: '<i class="fas fa-times"></i>',
-        label: game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.Cancel"),
-      },
-    },
-    default: "cancel",
-  }).render(true);
+  return purgeGear(token);
 }
