@@ -9,6 +9,7 @@ const PURGE_CONFIRMATION_SETTING_KEY = "confirmPurgeGear";
 const SHOW_TOKEN_CONTROLS_SETTING_KEY = "showTokenControls";
 const PURGE_AMMUNITION_SETTING_KEY = "purgeAmmunition";
 const RETAIN_WEAPON_AMMUNITION_SETTING_KEY = "retainWeaponAmmunition";
+const CIVILIAN_COMBAT_NUMBER_SETTING_KEY = "civilianCombatNumber";
 
 export const DEFAULT_SKILL_CLASSIFICATIONS: SkillClassifications = {
   Accounting: 3,
@@ -174,6 +175,13 @@ export function isRetainWeaponAmmunitionEnabled(): boolean {
   return getSettingsApi().get(MODULE_ID, RETAIN_WEAPON_AMMUNITION_SETTING_KEY) !== false;
 }
 
+export function getCivilianCombatNumber(): number {
+  const value = Number(
+    getSettingsApi().get(MODULE_ID, CIVILIAN_COMBAT_NUMBER_SETTING_KEY),
+  );
+  return Number.isInteger(value) && value >= 4 && value <= 18 ? value : 6;
+}
+
 export async function saveSkillClassifications(
   classifications: SkillClassifications,
 ): Promise<void> {
@@ -234,5 +242,14 @@ export function registerSkillClassificationSettings(): void {
     config: true,
     type: Boolean,
     default: true,
+  });
+  settings.register(MODULE_ID, CIVILIAN_COMBAT_NUMBER_SETTING_KEY, {
+    name: "PNEUMA_MOOK_MAKER.Settings.CivilianCombatNumber.Name",
+    hint: "PNEUMA_MOOK_MAKER.Settings.CivilianCombatNumber.Hint",
+    scope: "world",
+    config: true,
+    type: Number,
+    default: 6,
+    range: { min: 4, max: 18, step: 1 },
   });
 }

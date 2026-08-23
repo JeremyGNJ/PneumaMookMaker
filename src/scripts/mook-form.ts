@@ -10,7 +10,10 @@ import { getStatsForHitPoints } from "./stats.js";
 import { confirmPurgeGear } from "./purge.js";
 import { confirmPromotion } from "./promotion.js";
 import { getAvailableSystemRoles, type AvailableRole } from "./roles.js";
-import { areTokenControlsVisible } from "./skill-settings.js";
+import {
+  areTokenControlsVisible,
+  getCivilianCombatNumber,
+} from "./skill-settings.js";
 import {
   getWeaponInventoryChoices,
   getWeaponUpdates,
@@ -37,13 +40,14 @@ function getRadioChoices(
   selected: string,
   className = "pneuma-mook-maker-radio-row",
   suffix = "",
+  labels: Readonly<Record<string, string>> = {},
 ): string {
   const choices = values
     .map(
       (value) => `
         <label class="pneuma-mook-maker-radio">
           <input type="radio" name="${name}" value="${value}"${value === selected ? " checked" : ""}>
-          <span>${value}</span>
+          <span>${escapeHtml(labels[value] ?? value)}</span>
         </label>`,
     )
     .join("");
@@ -62,7 +66,7 @@ function getSkillAdjustmentOptions(name: string): string {
         <label class="pneuma-mook-maker-radio pneuma-mook-maker-set-custom">
           <input type="radio" name="${name}" value="set-custom">
           <span>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.SetSkillTarget")}</span>
-          <input type="text" name="${name}Target" inputmode="numeric" pattern="(?:[89]|1[0-8])"
+          <input type="text" name="${name}Target" inputmode="numeric" pattern="(?:[0-9]|1[0-8])"
             maxlength="2" aria-label="${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.SkillTarget")}" disabled>
         </label>
       </div>
@@ -101,10 +105,11 @@ function getMookMakerForm(token: Token, availableRoles: AvailableRole[]): string
   const name = escapeHtml(token.document.name ?? token.actor?.name ?? "");
   const actor = token.actor ?? {};
   const actorDocument = token.actor;
+  const civilianCombatNumber = getCivilianCombatNumber();
   const currentCombatNumber = actorDocument
     ? getCurrentCombatNumber(actorDocument)
     : null;
-  const currentCombatSelection = currentCombatNumber === 8
+  const currentCombatSelection = currentCombatNumber === civilianCombatNumber
     ? "Civilian"
     : currentCombatNumber !== null && currentCombatNumber >= 10 && currentCombatNumber <= 14
       ? String(currentCombatNumber)
@@ -119,7 +124,7 @@ function getMookMakerForm(token: Token, availableRoles: AvailableRole[]): string
       <input type="radio" name="combatNumber" value="custom"${currentCombatSelection === "custom" ? " checked" : ""}>
       <span>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.Custom")}</span>
       <input class="pneuma-mook-maker-custom-number" name="customCombatNumber" type="text"
-        inputmode="numeric" pattern="(?:[89]|1[0-9]|20)" maxlength="2" value="${customCombatValue}"
+        inputmode="numeric" pattern="(?:[0-9]|1[0-9]|20)" maxlength="2" value="${customCombatValue}"
         aria-label="${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.CustomCombatNumber")}"${currentCombatSelection === "custom" ? "" : " disabled"}>
     </label>`;
   const combatChoices = getRadioChoices(
@@ -128,6 +133,11 @@ function getMookMakerForm(token: Token, availableRoles: AvailableRole[]): string
     currentCombatSelection,
     "pneuma-mook-maker-radio-column",
     customCombatChoice,
+    {
+      Civilian: game.i18n!.format("PNEUMA_MOOK_MAKER.Form.CivilianCombatNumber", {
+        number: civilianCombatNumber,
+      }),
+    },
   );
   const armorChoices = [
     "None",
@@ -333,10 +343,6 @@ export async function showMookMakerMenu(token: Token): Promise<void> {
         input.value = input.value.replace(/\D/g, "").slice(0, 2);
         if (Number(input.value) > 20) input.value = "20";
       });
-      customNumber.on("blur", (event) => {
-        const input = event.currentTarget as HTMLInputElement;
-        if (input.value && Number(input.value) < 8) input.value = "8";
-      });
       html.find<HTMLInputElement>('#pneuma-mook-maker-level').on("input", (event) => {
         const input = event.currentTarget as HTMLInputElement;
         input.value = input.value.replace(/\D/g, "").slice(0, 1);
@@ -376,10 +382,6 @@ export async function showMookMakerMenu(token: Token): Promise<void> {
           html
             .find<HTMLInputElement>(`input[name="${adjustmentName}"][value="set-custom"]`)
             .prop("checked", true);
-        })
-        .on("blur", (event) => {
-          const input = event.currentTarget as HTMLInputElement;
-          if (input.value && Number(input.value) < 8) input.value = "8";
         });
       refreshSkillAdjustment();
 
@@ -491,7 +493,9 @@ export async function showMookMakerMenu(token: Token): Promise<void> {
             "No change",
         );
         let combatNumber: number | null = null;
-        if (combatSelection === "Civilian") combatNumber = 8;
+        if (combatSelection === "Civilian") {
+          combatNumber = getCivilianCombatNumber();
+        }
         else if (combatSelection === "custom") {
           const customCombatNumber = String(
             html.find<HTMLInputElement>('input[name="customCombatNumber"]').val() ?? "",
@@ -499,7 +503,7 @@ export async function showMookMakerMenu(token: Token): Promise<void> {
           const customValue = Number(customCombatNumber);
           if (
             /^\d{1,2}$/.test(customCombatNumber) &&
-            customValue >= 8 &&
+            customValue >= 0 &&
             customValue <= 20
           ) {
             combatNumber = customValue;
