@@ -184,12 +184,12 @@
   gap: 0.35rem;
 }
 
-.pneuma-mook-maker-minus-custom {
+.pneuma-mook-maker-set-custom {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) 2.25rem;
 }
 
-.pneuma-mook-maker-minus-custom input[type="text"] {
+.pneuma-mook-maker-set-custom input[type="text"] {
   flex: 0 0 2.25rem;
   text-align: center;
   width: 2.25rem;

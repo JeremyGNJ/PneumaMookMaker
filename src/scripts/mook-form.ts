@@ -1,7 +1,7 @@
 import { getArmorUpdates, getCurrentArmorSelections } from "./armor.js";
 import { applyMookChanges } from "./apply-mook.js";
 import {
-  getAdjustedSkillTarget,
+  getSkillTarget,
   getCurrentCombatNumber,
   getSkillUpdates,
   type SkillTargets,
@@ -59,11 +59,11 @@ function getSkillAdjustmentOptions(name: string): string {
           <input type="radio" name="${name}" value="unchanged" checked>
           <span>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.Unchanged")}</span>
         </label>
-        <label class="pneuma-mook-maker-radio pneuma-mook-maker-minus-custom">
-          <input type="radio" name="${name}" value="minus-custom">
-          <span>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.CombatNumberMinus")}</span>
-          <input type="text" name="${name}Minus" inputmode="numeric" pattern="[0-9]"
-            maxlength="1" aria-label="${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.CombatNumberMinusAmount")}" disabled>
+        <label class="pneuma-mook-maker-radio pneuma-mook-maker-set-custom">
+          <input type="radio" name="${name}" value="set-custom">
+          <span>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.SetSkillTarget")}</span>
+          <input type="text" name="${name}Target" inputmode="numeric" pattern="(?:[89]|1[0-8])"
+            maxlength="2" aria-label="${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.SkillTarget")}" disabled>
         </label>
       </div>
     </div>`;
@@ -351,7 +351,7 @@ export async function showMookMakerMenu(token: Token): Promise<void> {
 
         for (const name of ["secondarySkills", "tertiarySkills"]) {
           html
-            .find<HTMLInputElement>(`input[name="${name}Minus"]`)
+            .find<HTMLInputElement>(`input[name="${name}Target"]`)
             .prop("disabled", !enabled);
         }
       };
@@ -359,22 +359,27 @@ export async function showMookMakerMenu(token: Token): Promise<void> {
         .find('input[name="setNonCombatSkills"], input[name="secondarySkills"], input[name="tertiarySkills"]')
         .on("change", refreshSkillAdjustment);
       html
-        .find<HTMLInputElement>('input[name="secondarySkillsMinus"], input[name="tertiarySkillsMinus"]')
+        .find<HTMLInputElement>('input[name="secondarySkillsTarget"], input[name="tertiarySkillsTarget"]')
         .on("focus", (event) => {
           const input = event.currentTarget as HTMLInputElement;
-          const adjustmentName = input.name.replace(/Minus$/, "");
+          const adjustmentName = input.name.replace(/Target$/, "");
           html
-            .find<HTMLInputElement>(`input[name="${adjustmentName}"][value="minus-custom"]`)
+            .find<HTMLInputElement>(`input[name="${adjustmentName}"][value="set-custom"]`)
             .prop("checked", true)
             .trigger("change");
         })
         .on("input", (event) => {
           const input = event.currentTarget as HTMLInputElement;
-          input.value = input.value.replace(/\D/g, "").slice(0, 1);
-          const adjustmentName = input.name.replace(/Minus$/, "");
+          input.value = input.value.replace(/\D/g, "").slice(0, 2);
+          if (Number(input.value) > 18) input.value = "18";
+          const adjustmentName = input.name.replace(/Target$/, "");
           html
-            .find<HTMLInputElement>(`input[name="${adjustmentName}"][value="minus-custom"]`)
+            .find<HTMLInputElement>(`input[name="${adjustmentName}"][value="set-custom"]`)
             .prop("checked", true);
+        })
+        .on("blur", (event) => {
+          const input = event.currentTarget as HTMLInputElement;
+          if (input.value && Number(input.value) < 8) input.value = "8";
         });
       refreshSkillAdjustment();
 
@@ -511,37 +516,32 @@ export async function showMookMakerMenu(token: Token): Promise<void> {
         const skillTargets: SkillTargets = {};
         if (combatNumber !== null && Number.isFinite(combatNumber)) {
           skillTargets[1] = combatNumber;
-
-          const setNonCombatSkills = html
-            .find<HTMLInputElement>('input[name="setNonCombatSkills"]')
-            .prop("checked");
-          if (setNonCombatSkills) {
-            for (const [category, name] of [
-              [2, "secondarySkills"],
-              [3, "tertiarySkills"],
-            ] as const) {
-              const selection = String(
-                html.find<HTMLInputElement>(`input[name="${name}"]:checked`).val() ??
-                  "unchanged",
+        }
+        const setNonCombatSkills = html
+          .find<HTMLInputElement>('input[name="setNonCombatSkills"]')
+          .prop("checked");
+        if (setNonCombatSkills) {
+          for (const [category, name] of [
+            [2, "secondarySkills"],
+            [3, "tertiarySkills"],
+          ] as const) {
+            const selection = String(
+              html.find<HTMLInputElement>(`input[name="${name}"]:checked`).val() ??
+                "unchanged",
+            );
+            const customTarget = String(
+              html.find<HTMLInputElement>(`input[name="${name}Target"]`).val() ?? "",
+            );
+            const target = getSkillTarget(selection, customTarget);
+            if (Number.isNaN(target)) {
+              ui.notifications?.warn(
+                game.i18n!.localize(
+                  "PNEUMA_MOOK_MAKER.Form.SkillAdjustmentRequired",
+                ),
               );
-              const customAmount = String(
-                html.find<HTMLInputElement>(`input[name="${name}Minus"]`).val() ?? "",
-              );
-              const target = getAdjustedSkillTarget(
-                selection,
-                customAmount,
-                combatNumber,
-              );
-              if (Number.isNaN(target)) {
-                ui.notifications?.warn(
-                  game.i18n!.localize(
-                    "PNEUMA_MOOK_MAKER.Form.SkillAdjustmentRequired",
-                  ),
-                );
-                return;
-              }
-              if (target !== null) skillTargets[category] = target;
+              return;
             }
+            if (target !== null) skillTargets[category] = target;
           }
         }
 

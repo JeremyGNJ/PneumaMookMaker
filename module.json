@@ -2,7 +2,7 @@
   "id": "pneuma-mook-maker",
   "title": "Pneuma Mook Maker",
   "description": "Tools for creating mooks in Foundry Virtual Tabletop.",
-  "version": "0.90.0",
+  "version": "0.91.0",
   "authors": [
     {
       "name": "JeremyGNJ"
@@ -40,5 +40,5 @@
   ],
   "url": "https://github.com/JeremyGNJ/PneumaMookMaker",
   "manifest": "https://github.com/JeremyGNJ/PneumaMookMaker/releases/latest/download/module.json",
-  "download": "https://github.com/JeremyGNJ/PneumaMookMaker/releases/download/v0.90.0/pneuma-mook-maker.zip"
+  "download": "https://github.com/JeremyGNJ/PneumaMookMaker/releases/download/v0.91.0/pneuma-mook-maker.zip"
 }

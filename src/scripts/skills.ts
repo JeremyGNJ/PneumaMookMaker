@@ -59,14 +59,13 @@ export function getSkillUpdates(
   });
 }
 
-export function getAdjustedSkillTarget(
+export function getSkillTarget(
   selection: string,
-  customAmount: string,
-  combatNumber: number,
+  customTarget: string,
 ): number | null {
   if (selection === "unchanged") return null;
-  if (selection === "minus-custom" && /^\d$/.test(customAmount)) {
-    return combatNumber - Number(customAmount);
+  if (selection === "set-custom" && /^(?:[89]|1[0-8])$/.test(customTarget)) {
+    return Number(customTarget);
   }
   return Number.NaN;
 }
