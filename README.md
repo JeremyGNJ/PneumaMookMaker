@@ -14,8 +14,9 @@
   control for the Mook Maker dialog.
 - Apply can rename the synthetic Actor and Token, set BODY/WILL-derived HP,
   MOVE, Combat Number skill levels, armor, and Role rank.
-- Purge Gear removes unused gear while preserving ammunition, carried/equipped
-  items, and complete installed-item trees. Its warning can be disabled in
-  module settings.
+- Two weapons from the mook's inventory can be equipped on Apply.
+- Purge Unused Gear removes unused inventory while preserving carried/equipped
+  items and complete installed-item trees. Optional ammunition purging can
+  retain every ammo type used by carried or equipped weapons.
 - Promote creates a linked Actor in `MookMaker/Promoted`, links the current
   Token to it, and marks the Token as promoted from MookMaker.

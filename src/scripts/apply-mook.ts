@@ -8,6 +8,8 @@ export interface ApplyMookChanges {
   actor: Actor;
   initialName: string;
   newName: string;
+  displayName: number;
+  tokenDisposition: number;
   move: number;
   hitPoints: number;
   hitPointStats: HitPointStats;
@@ -15,6 +17,7 @@ export interface ApplyMookChanges {
   roleLevel: number;
   roleSource?: Record<string, unknown>;
   armorUpdates: object[];
+  weaponUpdates: object[];
   skillUpdates: object[];
 }
 
@@ -46,8 +49,9 @@ async function rollbackApply(actions: RollbackAction[]): Promise<boolean> {
 
 export async function applyMookChanges(changes: ApplyMookChanges): Promise<boolean> {
   const {
-    token, actor, initialName, newName, move, hitPoints, hitPointStats,
-    roleName, roleLevel, roleSource, armorUpdates, skillUpdates,
+    token, actor, initialName, newName, displayName, tokenDisposition,
+    move, hitPoints, hitPointStats,
+    roleName, roleLevel, roleSource, armorUpdates, weaponUpdates, skillUpdates,
   } = changes;
   const rollbackActions: RollbackAction[] = [];
   try {
@@ -71,7 +75,12 @@ export async function applyMookChanges(changes: ApplyMookChanges): Promise<boole
     const roleUpdates = existingRole?.id
       ? [{ _id: existingRole.id, "system.rank": roleLevel }]
       : [];
-    const embeddedUpdates = [...armorUpdates, ...skillUpdates, ...roleUpdates];
+    const embeddedUpdates = [
+      ...armorUpdates,
+      ...weaponUpdates,
+      ...skillUpdates,
+      ...roleUpdates,
+    ];
     if (embeddedUpdates.length > 0) {
       const rollbackUpdates = getEmbeddedRollbackUpdates(actor, embeddedUpdates);
       await actor.updateEmbeddedDocuments("Item", embeddedUpdates);
@@ -134,11 +143,20 @@ export async function applyMookChanges(changes: ApplyMookChanges): Promise<boole
     await updatableDelta.update(deltaChanges);
     rollbackActions.push(() => updatableDelta.update(deltaRollback));
 
-    if (nameChanged) {
-      const oldTokenName = token.document.name;
-      await token.document.update({ name: newName });
-      rollbackActions.push(() => token.document.update({ name: oldTokenName }));
-    }
+    const oldTokenData = {
+      name: token.document.name,
+      displayName: token.document.displayName,
+      disposition: token.document.disposition,
+    };
+    const updatableToken = token.document as unknown as {
+      update(data: object): Promise<unknown>;
+    };
+    await updatableToken.update({
+      ...(nameChanged ? { name: newName } : {}),
+      displayName,
+      disposition: tokenDisposition,
+    });
+    rollbackActions.push(() => updatableToken.update(oldTokenData));
     return nameChanged;
   } catch (error) {
     console.error(`${MODULE_ID} | Failed to apply mook changes`, error);

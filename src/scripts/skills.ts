@@ -22,7 +22,7 @@ export function getCurrentCombatNumber(actor: Actor): number | null {
     );
     const skillLevel = Number(foundry.utils.getProperty(item, "system.level"));
     const base = statValue + skillLevel;
-    if (!Number.isInteger(base) || base < 8 || base > 20) continue;
+    if (!Number.isInteger(base) || base < 0 || base > 20) continue;
     counts.set(base, (counts.get(base) ?? 0) + 1);
   }
 
@@ -59,14 +59,13 @@ export function getSkillUpdates(
   });
 }
 
-export function getAdjustedSkillTarget(
+export function getSkillTarget(
   selection: string,
-  customAmount: string,
-  combatNumber: number,
+  customTarget: string,
 ): number | null {
   if (selection === "unchanged") return null;
-  if (selection === "minus-custom" && /^\d$/.test(customAmount)) {
-    return combatNumber - Number(customAmount);
+  if (selection === "set-custom" && /^(?:[0-9]|1[0-8])$/.test(customTarget)) {
+    return Number(customTarget);
   }
   return Number.NaN;
 }

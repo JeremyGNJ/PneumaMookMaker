@@ -57,6 +57,23 @@
   width: 3rem;
 }
 
+.pneuma-mook-maker-token-row {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0.5rem 0 0.75rem;
+  max-width: 440px;
+}
+
+.pneuma-mook-maker-token-row label {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.pneuma-mook-maker-token-row label > span {
+  font-weight: 600;
+}
+
 .pneuma-mook-maker-radio-row {
   display: flex;
   flex-wrap: wrap;
@@ -127,7 +144,6 @@
 }
 
 .pneuma-mook-maker-primary-combat-options {
-  border-right: 1px solid var(--color-border-light-primary);
   padding-right: 0.5rem;
 }
 
@@ -168,12 +184,12 @@
   gap: 0.35rem;
 }
 
-.pneuma-mook-maker-minus-custom {
+.pneuma-mook-maker-set-custom {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) 2.25rem;
 }
 
-.pneuma-mook-maker-minus-custom input[type="text"] {
+.pneuma-mook-maker-set-custom input[type="text"] {
   flex: 0 0 2.25rem;
   text-align: center;
   width: 2.25rem;
@@ -182,13 +198,40 @@
 .pneuma-mook-maker-armor-grid {
   display: grid;
   gap: 0.75rem;
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(2, 145px) minmax(270px, 1fr);
   justify-content: start;
   margin: 0.75rem 0;
 }
 
+.pneuma-mook-maker-weapons {
+  display: grid;
+  gap: 0.5rem;
+  min-width: 270px !important;
+}
+
+.pneuma-mook-maker-weapon-slot {
+  display: grid;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.pneuma-mook-maker-weapon-slot h4 {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.pneuma-mook-maker-weapon-slot select {
+  min-width: 0;
+  width: 100%;
+}
+
 .pneuma-mook-maker-armor-grid fieldset {
-  min-width: 185px;
+  min-width: 0;
+}
+
+.pneuma-mook-maker-armor-grid > fieldset:not(.pneuma-mook-maker-weapons) {
+  padding-left: 0.55rem;
+  padding-right: 0.45rem;
 }
 
 .pneuma-mook-maker-armor-note {
@@ -196,7 +239,7 @@
   font-size: 0.8rem;
   grid-column: 1 / -1;
   margin: -0.25rem 0 0;
-  max-width: 390px;
+  max-width: 100%;
 }
 
 .pneuma-mook-maker-armor-note i {
@@ -223,8 +266,8 @@
 }
 
 .pneuma-mook-maker-secondary-actions {
-  background: rgba(180, 35, 35, 0.12);
-  border: 1px solid rgba(180, 35, 35, 0.38);
+  background: rgba(45, 45, 45, 0.22);
+  border: 1px solid rgba(55, 55, 55, 0.58);
   border-radius: 5px;
   display: grid;
   gap: 0.5rem;
@@ -238,12 +281,29 @@
 }
 
 .pneuma-mook-maker-purge {
-  color: var(--color-level-error, #b00020);
+  background: #8f2424;
+  border-color: #b83a3a;
+  color: #fff;
 }
 
 .pneuma-mook-maker-purge:hover,
 .pneuma-mook-maker-purge:focus {
-  color: #ff3030;
+  background: #aa2c2c;
+  border-color: #df5656;
+  color: #fff;
+}
+
+.pneuma-mook-maker-promote {
+  background: #8a6510;
+  border-color: #b98b21;
+  color: #fff;
+}
+
+.pneuma-mook-maker-promote:hover,
+.pneuma-mook-maker-promote:focus {
+  background: #a77b14;
+  border-color: #ddb13f;
+  color: #fff;
 }
 
 .pneuma-mook-maker-skill-config-form {
@@ -285,6 +345,7 @@
 
 @media (max-width: 480px) {
   .pneuma-mook-maker-identity-row,
+  .pneuma-mook-maker-token-row,
   .pneuma-mook-maker-stat-grid,
   .pneuma-mook-maker-armor-grid {
     grid-template-columns: 1fr;
