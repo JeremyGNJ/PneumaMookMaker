@@ -210,26 +210,31 @@ function getMookMakerForm(token: Token, availableRoles: AvailableRole[]): string
       <header class="pneuma-mook-maker-form-header">
         <h2>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.Header")}</h2>
       </header>
-      <div class="pneuma-mook-maker-identity-row">
-        <label class="pneuma-mook-maker-identity-name" for="pneuma-mook-maker-name">
-          <span>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.Name")}</span>
-          <input id="pneuma-mook-maker-name" name="name" type="text" value="${name}" size="25" autocomplete="off">
-        </label>
-        <label for="pneuma-mook-maker-role">
-          <span>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.Role")}</span>
-          <select id="pneuma-mook-maker-role" name="role">
-            <option value="none"${activeRoleKey === "none" ? " selected" : ""}>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.None")}</option>
-            ${roleOptions}
-          </select>
-        </label>
-        <label class="pneuma-mook-maker-level" for="pneuma-mook-maker-level">
-          <span>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.Level")}</span>
-          <input id="pneuma-mook-maker-level" name="level" type="text" inputmode="numeric"
-            pattern="[0-9]" maxlength="1" value="${activeRoleLevel}" autocomplete="off">
-        </label>
-      </div>
-      ${tokenControls}
-      <div class="pneuma-mook-maker-stat-grid">
+      <fieldset class="pneuma-mook-maker-section pneuma-mook-maker-section-mook">
+        <legend>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.SectionMook")}</legend>
+        <div class="pneuma-mook-maker-identity-row">
+          <label class="pneuma-mook-maker-identity-name" for="pneuma-mook-maker-name">
+            <span>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.Name")}</span>
+            <input id="pneuma-mook-maker-name" name="name" type="text" value="${name}" size="25" autocomplete="off">
+          </label>
+          <label for="pneuma-mook-maker-role">
+            <span>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.Role")}</span>
+            <select id="pneuma-mook-maker-role" name="role">
+              <option value="none"${activeRoleKey === "none" ? " selected" : ""}>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.None")}</option>
+              ${roleOptions}
+            </select>
+          </label>
+          <label class="pneuma-mook-maker-level" for="pneuma-mook-maker-level">
+            <span>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.Level")}</span>
+            <input id="pneuma-mook-maker-level" name="level" type="text" inputmode="numeric"
+              pattern="[0-9]" maxlength="1" value="${activeRoleLevel}" autocomplete="off">
+          </label>
+        </div>
+        ${tokenControls}
+      </fieldset>
+      <fieldset class="pneuma-mook-maker-section pneuma-mook-maker-section-stats">
+        <legend>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.SectionStats")}</legend>
+        <div class="pneuma-mook-maker-stat-grid">
         <fieldset>
           <legend>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.CombatNumber")}</legend>
           <div class="pneuma-mook-maker-combat-layout">
@@ -262,8 +267,11 @@ function getMookMakerForm(token: Token, availableRoles: AvailableRole[]): string
           <legend>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.Move")}</legend>
           ${getRadioChoices("move", ["2", "3", "4", "5", "6", "7", "8"], currentMove, "pneuma-mook-maker-radio-column")}
         </fieldset>
-      </div>
-      <div class="pneuma-mook-maker-armor-grid">
+        </div>
+      </fieldset>
+      <fieldset class="pneuma-mook-maker-section pneuma-mook-maker-section-gear">
+        <legend>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.SectionGear")}</legend>
+        <div class="pneuma-mook-maker-armor-grid">
         <fieldset>
           <legend>${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.BodyArmor")}</legend>
           ${getRadioChoices("bodyArmor", armorChoices, armorSelections.body, "pneuma-mook-maker-radio-column")}
@@ -280,7 +288,8 @@ function getMookMakerForm(token: Token, availableRoles: AvailableRole[]): string
           <i class="fas fa-circle-info"></i>
           ${game.i18n!.localize("PNEUMA_MOOK_MAKER.Form.ArmorInventoryNote")}
         </p>
-      </div>
+        </div>
+      </fieldset>
       <div class="pneuma-mook-maker-form-actions">
         <button type="button" data-action="apply">
           <i class="fas fa-check"></i>

@@ -30,6 +30,43 @@
   text-align: center;
 }
 
+.pneuma-mook-maker-section {
+  --pneuma-section-accent: #267aa5;
+  --pneuma-section-background: rgba(38, 122, 165, 0.08);
+  background: var(--pneuma-section-background);
+  border: 1px solid color-mix(in srgb, var(--pneuma-section-accent) 30%, transparent);
+  border-left: 4px solid var(--pneuma-section-accent);
+  border-radius: 6px;
+  margin: 0.85rem 0 0;
+  padding: 0.65rem 0.75rem 0.75rem;
+}
+
+.pneuma-mook-maker-section > legend {
+  color: var(--pneuma-section-accent);
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 0 0.45rem;
+}
+
+.pneuma-mook-maker-section-stats {
+  --pneuma-section-accent: #2e8b45;
+  --pneuma-section-background: rgba(46, 139, 69, 0.07);
+}
+
+.pneuma-mook-maker-section-gear {
+  --pneuma-section-accent: #9a6b18;
+  --pneuma-section-background: rgba(154, 107, 24, 0.08);
+}
+
+.pneuma-mook-maker-section .pneuma-mook-maker-identity-row {
+  margin-bottom: 0;
+}
+
+.pneuma-mook-maker-section .pneuma-mook-maker-stat-grid,
+.pneuma-mook-maker-section .pneuma-mook-maker-armor-grid {
+  margin: 0.15rem 0 0;
+}
+
 .pneuma-mook-maker-identity-row {
   align-items: end;
   display: grid;
