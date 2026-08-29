@@ -1,6 +1,6 @@
 {
   "name": "pneuma-mook-maker",
-  "version": "0.93.2",
+  "version": "0.93.3",
   "private": true,
   "type": "module",
   "description": "A TypeScript module for Foundry Virtual Tabletop v12.",
